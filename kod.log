@@ -1,0 +1,4309 @@
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2025.8.24)  5 DEC 2025 19:14
+ restricted system commands enabled.
+**kod.tex
+(./kod.tex
+LaTeX2e <2022-11-01> patch level 1
+Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
+Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2022-10-04 2.75 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "/home/piegus/.texlive2023/texmf-var
+/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2022-10-03.lua" from kpse-res
+olved path "/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader-2022-
+10-03.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.120
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "/home/piegus/.texlive2023/texmf-var
+/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'. L3 programm
+ing layer <2023-02-22>
+Inserting `tracingstacklevels' in `input_level_string'.
+! Undefined control sequence.
+l.1 \subsection
+             {Kod do fitowania wyników z eksperymentu}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \subsection{K
+               od do fitowania wyników z eksperymentu}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment python undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{python}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.3 fps = {x.stem: x for x in ZipPath('caly_
+                                          test.zip', at='/').iterdir()}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+! Extra }, or forgotten $.
+l.3 ...n ZipPath('caly_test.zip', at='/').iterdir()}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.7 	
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--7
+[]Kod
+ []
+
+
+Overfull \hbox (62.32823pt too wide) in paragraph at lines 1--7
+ZipPath('caly$[][]\OML/cmm/m/it/10 est:zip[]; at \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (165.09215pt too wide) in paragraph at lines 1--7
+\OML/cmm/m/it/10 =[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :iterdir\OT1/cmr/m/n/10 ()
+\OML/cmm/m/it/10 fpsfork; vinfps:items\OT1/cmr/m/n/10 () :
+ []
+
+
+Overfull \hbox (83.18665pt too wide) in paragraph at lines 1--7
+\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; v:exists\OT1/cmr/m/n
+/10 ())$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 d
+   fs = {}	for k,v in fps.items():
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.10 	dfs[k] = pd.read_
+                     csv(f, parse_dates=['UTC'], index_col='UTC')
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.11 	#
+      dfs[k].set_index('UTC', inplace=True)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.15 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--15
+[]dfs
+ []
+
+
+Overfull \hbox (85.6267pt too wide) in paragraph at lines 8--15
+pd.read$[][]\OML/cmm/m/it/10 sv\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f; parse[]ates \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (89.11076pt too wide) in paragraph at lines 8--15
+\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 UTC[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; ind
+ex[]ol \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (175.06482pt too wide) in paragraph at lines 8--15
+\OML/cmm/m/it/10 UTC[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dfs\OT1/cmr/m/n/10 [\OM
+L/cmm/m/it/10 k\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :set[]ndex\OT1/cmr/m/n/10 ([]\
+OML/cmm/m/it/10 UTC[]; inplace \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (46.35773pt too wide) in paragraph at lines 8--15
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 df \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (194.4243pt too wide) in paragraph at lines 8--15
+\OML/cmm/m/it/10 dfs\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 250908\OML/cmm/m/it/10 D[]\OT1/cmr/m/n/10 ][[[]\OML/cmm/m/it/10 cps[]\OT1/cmr/m/n/10 ]]\OML/cmm/m/it/10 :rename\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 columns \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (146.4326pt too wide) in paragraph at lines 8--15
+[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 fig; ax\OT1/cmr/m/n/10 1 =
+ []
+
+
+Overfull \hbox (92.86124pt too wide) in paragraph at lines 8--15
+\OML/cmm/m/it/10 plt:subplots\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 nrows \OT1/cmr/m
+/n/10 =
+ []
+
+
+Overfull \hbox (52.42499pt too wide) in paragraph at lines 8--15
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; figsize \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (73.11806pt too wide) in paragraph at lines 8--15
+\OT1/cmr/m/n/10 (12\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6)\OML/cmm/m/it/10 ; share
+x \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (26.29176pt too wide) in paragraph at lines 8--15
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 c
+    n = 'M250908D cps'
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.21 maly_
+        df = df['2025-09-08 17:34':]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.24 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--24
+[]cn
+ []
+
+
+Overfull \hbox (21.19064pt too wide) in paragraph at lines 16--24
+maly$[][]\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (42.87166pt too wide) in paragraph at lines 16--24
+\OML/cmm/m/it/10 df\OT1/cmr/m/n/10 [[]2025 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 16--24
+\OT1/cmr/m/n/10 09 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (25.55556pt too wide) in paragraph at lines 16--24
+\OT1/cmr/m/n/10 0817 :
+ []
+
+
+Overfull \hbox (18.36108pt too wide) in paragraph at lines 16--24
+\OT1/cmr/m/n/10 34[] :
+ []
+
+
+Overfull \hbox (16.94441pt too wide) in paragraph at lines 16--24
+\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.69736pt too wide) in paragraph at lines 16--24
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 maly[]f:index \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (155.18707pt too wide) in paragraph at lines 16--24
+\OML/cmm/m/it/10 maly[]f:index\OT1/cmr/m/n/10 [0])\OML/cmm/m/it/10 :total[]econd
+s\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (48.67003pt too wide) in paragraph at lines 16--24
+\OML/cmm/m/it/10 maly[]f\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 cn\OT1/cmr/m/n/10 ]$ 
+
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 d
+    ef lin_fit(t,x1,x2,a,b,c,T,x):   # funkcja do segmentu liniowego
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.26 def lin_
+           fit(t,x1,x2,a,b,c,T,x):   # funkcja do segmentu liniowego
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.26 def lin_fit(t,x1,x2,a,b,c,T,x):   #
+                                       funkcja do segmentu liniowego
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.29 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 26--29
+[]def
+ []
+
+
+Overfull \hbox (108.02367pt too wide) in paragraph at lines 26--29
+lin$[][]\OML/cmm/m/it/10 it\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\OT1/cmr/m/n/1
+0 1\OML/cmm/m/it/10 ; x\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; a; b; c; T; x\OT1/cm
+r/m/n/10 ) :
+ []
+
+
+Overfull \hbox (149.62047pt too wide) in paragraph at lines 26--29
+\OML/cmm/m/it/10 funkcjadosegmentuliniowegoy \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (10.2859pt too wide) in paragraph at lines 26--29
+\OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 26--29
+\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (39.1263pt too wide) in paragraph at lines 26--29
+\OML/cmm/m/it/10 breturny$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 d
+    ef par_fit(t,x1,x2,a,b,c,T,x):    # funkcja do segmentu paraboli
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.30 def par_
+           fit(t,x1,x2,a,b,c,T,x):    # funkcja do segmentu paraboli
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.30 def par_fit(t,x1,x2,a,b,c,T,x):    #
+                                        funkcja do segmentu paraboli
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.35 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--35
+[]def
+ []
+
+
+Overfull \hbox (108.02367pt too wide) in paragraph at lines 30--35
+par$[][]\OML/cmm/m/it/10 it\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\OT1/cmr/m/n/1
+0 1\OML/cmm/m/it/10 ; x\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; a; b; c; T; x\OT1/cm
+r/m/n/10 ) :
+ []
+
+
+Overfull \hbox (142.7401pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 funkcjadosegmentuparabolid \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 30--35
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (9.32758pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (27.24306pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (9.32758pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (15.7153pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 30--35
+\OMS/cmsy/m/n/10 \OT1/cmr/m/n/10 2 +
+ []
+
+
+Overfull \hbox (10.20488pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 d \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (26.5324pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (9.32758pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (8.61113pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 30--35
+\OMS/cmsy/m/n/10 \OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (10.20488pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 d \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (40.8069pt too wide) in paragraph at lines 30--35
+\OML/cmm/m/it/10 freturny$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.36 #
+     def exp_fit(t,x1,x2,a,b,c,T,x):   # funkcja do segmentu exp
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 # d
+      ef exp_fit(t,x1,x2,a,b,c,T,x):   # funkcja do segmentu exp
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.36 # def exp_
+             fit(t,x1,x2,a,b,c,T,x):   # funkcja do segmentu exp
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.36 # def exp_fit(t,x1,x2,a,b,c,T,x):   #
+                                         funkcja do segmentu exp
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.37 #
+         d=-2*c*x1
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.38 #
+         f = c*x2**2 + d*x2
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.39 #
+         g = (c*x2**2 + d*x2+f)/np.exp(x2/T)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.40 #
+         y = np.exp(t/T)*g
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.41 #
+         return y
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.42 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 36--42
+[]def
+ []
+
+
+Overfull \hbox (108.02367pt too wide) in paragraph at lines 36--42
+exp$[][]\OML/cmm/m/it/10 it\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\OT1/cmr/m/n/1
+0 1\OML/cmm/m/it/10 ; x\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; a; b; c; T; x\OT1/cm
+r/m/n/10 ) :
+ []
+
+
+Overfull \hbox (121.9859pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 funkcjadosegmentuexpd \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 36--42
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (9.32758pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (27.24306pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (9.32758pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (15.7153pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 36--42
+\OMS/cmsy/m/n/10 \OT1/cmr/m/n/10 2 +
+ []
+
+
+Overfull \hbox (10.20488pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 d \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (26.39926pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 g \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (13.21648pt too wide) in paragraph at lines 36--42
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (15.7153pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 36--42
+\OMS/cmsy/m/n/10 \OT1/cmr/m/n/10 2 +
+ []
+
+
+Overfull \hbox (10.20488pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 d \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (18.49309pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 2 +
+ []
+
+
+Overfull \hbox (90.61821pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =np:exp\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 x\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 =T\OT1/cmr/m/n/10 )\OML/cmm/m/
+it/10 y \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (57.83577pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 np:exp\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t=T\OT1/cmr/m/n/10 ) \
+OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (39.9631pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 greturny$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 d
+    ef exp_fit(t, a, T):   # funkcja do segmentu exp
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.43 def exp_
+           fit(t, a, T):   # funkcja do segmentu exp
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.43 def exp_fit(t, a, T):   #
+                             funkcja do segmentu exp
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.47 popt, np.sqrt(np.diag(pcov)) #
+                                  pierwszy to parametry a i T drugi to ich n...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.48 sigma_a, sigma_T = np.sqrt(np.diag(pcov))   #
+                                                 Δa, ΔT
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: \begin{document} ended by \end{python}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{python}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.58 \end{python}
+               
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ś (U+015B) in font cmmi10!
+Missing character: There is no ś (U+015B) in font cmmi10!
+Missing character: There is no Δ (U+0394) in font cmmi10!
+Missing character: There is no Δ (U+0394) in font cmmi10!
+Missing character: There is no Δ (U+0394) in font cmmi10!
+Missing character: There is no Δ (U+0394) in font cmmi10!
+Missing character: There is no ± (U+00B1) in font cmr10!
+Missing character: There is no ± (U+00B1) in font cmr10!
+! Missing } inserted.
+<inserted text> 
+}
+l.58 \end{python}
+               
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.59 \subsection
+              {Kod do wyznaczenia miejsc zerowych }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment python undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \begin{python}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--61
+[]def
+ []
+
+
+Overfull \hbox (50.5921pt too wide) in paragraph at lines 43--61
+exp$[][]\OML/cmm/m/it/10 it\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; a; T\OT1/cmr/m/
+n/10 ) :
+ []
+
+
+Overfull \hbox (122.04263pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 funkcjadosegmentuexpy \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (57.83577pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 np:exp\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t=T\OT1/cmr/m/n/10 ) \
+OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (93.05334pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 areturnypopt; pcov \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (111.26884pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 curve[]it\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 exp[]it; t; y; p\OT
+1/cmr/m/n/10 0 =
+ []
+
+
+Overfull \hbox (105.01123pt too wide) in paragraph at lines 43--61
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 y:iloc\OT1/cmr/m/n/10 [0]\OML/cmm/m/it/10 ; \
+OT1/cmr/m/n/10 60]\OML/cmm/m/it/10 ; maxfev \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (440.6407pt too wide) in paragraph at lines 43--61
+\OT1/cmr/m/n/10 10000)\OML/cmm/m/it/10 popt; np:sqrt\OT1/cmr/m/n/10 (\OML/cmm/m
+/it/10 np:diag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pcov\OT1/cmr/m/n/10 ))\OML/cmm/
+m/it/10 pierwszytoparametryaiTdrugitoichniepewnocisigma[]; sigma[] \OT1/cmr/m/n
+/10 =
+ []
+
+
+Overfull \hbox (170.81567pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 np:sqrt\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 np:diag\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 pcov\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 a; Ta[]at; T[]at \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (72.10263pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 poptprint\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 "\
+OML/cmm/m/it/10 a \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (158.42581pt too wide) in paragraph at lines 43--61
+[][]\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (156.78122pt too wide) in paragraph at lines 43--61
+[][]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 ]")\OML/cmm/m/it/10 fig; ax \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (97.53159pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 plt:subplots\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 figsize \OT1/cmr
+/m/n/10 =
+ []
+
+
+Overfull \hbox (135.39366pt too wide) in paragraph at lines 43--61
+\OT1/cmr/m/n/10 (20\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 12))\OML/cmm/m/it/10 ax:pl
+ot\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; y; marker \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (41.17822pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 :[]; label \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (184.63278pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 cn\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ax:plot\OT1/cmr/m/n/10 (\O
+ML/cmm/m/it/10 t; exp[]it\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 popt\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;[] r\OMS/cmsy/m/n/10 ^^
+@[]\OML/cmm/m/it/10 ; label \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (203.11462pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 fit[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ax:set[]scale\OT1/cmr/m
+/n/10 ([]\OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ax:grid\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 True; which \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (60.86224pt too wide) in paragraph at lines 43--61
+\OML/cmm/m/it/10 both[]; alpha \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (67.05225pt too wide) in paragraph at lines 43--61
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 3)\OML/cmm/m/it/10 ax:legend\OT1/cmr/m/n/10 ()$
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 f
+    rom __future__ import annotations
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.62 from _
+         _future__ import annotations
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+_
+l.62 from __
+          future__ import annotations
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+If you're confused by all this, try typing `I}' now.
+
+! Missing { inserted.
+<to be read again> 
+_
+l.62 from __future__
+                   import annotations
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+If you're confused by all this, try typing `I}' now.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.73 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.73 
+   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.73 
+   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 62--73
+[]from
+ []
+
+
+Overfull \hbox (1015.41553pt too wide) in paragraph at lines 62--73
+[][]$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.74 #
+     0b.  USTAWIENIA MATPLOTLIB
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 # 0
+      b.  USTAWIENIA MATPLOTLIB
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.78 	'mathtext.fontset': 'cm',     #
+                                    ładny wygląd symboli i 10^n bez LaTeX
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.78 ...t': 'cm',     # ładny wygląd symboli i 10^
+                                                  n bez LaTeX
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.80 	
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 74--80
+[]0b.
+ []
+
+
+Overfull \hbox (148.48433pt too wide) in paragraph at lines 74--80
+10$[][]\OML/cmm/m/it/10 bezLaTeX[]axes:unicode[]inus[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (28.40747pt too wide) in paragraph at lines 74--80
+\OML/cmm/m/it/10 False;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 	'
+     font.size': 20,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 81--86
+[]'font.size':
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 	'
+     figure.dpi': 140,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.89 	'figure.constrained_
+                        layout.use': True,  #
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.89 	'figure.constrained_layout.use': True,  #
+                                             
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Extra }, or forgotten $.
+l.90 }
+    )
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.91 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 87--91
+[]'figure.dpi':
+ []
+
+
+Overfull \hbox (54.00705pt too wide) in paragraph at lines 87--91
+'figure.constrained$[][]\OML/cmm/m/it/10 ayout:use[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (30.73618pt too wide) in paragraph at lines 87--91
+\OML/cmm/m/it/10 True; \OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 b
+    eta_i   = np.array([2.43e-4, 1.363e-3, 1.203e-3,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.93 beta_
+        i   = np.array([2.43e-4, 1.363e-3, 1.203e-3,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.97 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (33.8848pt too wide) in paragraph at lines 93--97
+[]beta$[][] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (76.10208pt too wide) in paragraph at lines 93--97
+\OML/cmm/m/it/10 np:array\OT1/cmr/m/n/10 ([2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 43
+\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (44.65634pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 363\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (44.65634pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 203\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (44.65634pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 605\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (39.65633pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 19\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (39.65633pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 67\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (57.5805pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 4])\OML/cmm/m/it/10 lambda[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (76.10208pt too wide) in paragraph at lines 93--97
+\OML/cmm/m/it/10 np:array\OT1/cmr/m/n/10 ([1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 27
+\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (39.65633pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 17\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (39.65633pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 15\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (39.65633pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 11\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (56.11119pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 40\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
+ 87])$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 b
+    eta          = beta_i.sum()         # 0.006552 (1 $)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.98 beta          = beta_
+                        i.sum()         # 0.006552 (1 $)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.98 beta          = beta_i.sum()         #
+                                          0.006552 (1 $)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.99 Lambda_
+          prompt = 150e-6               # 150 µs
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.99 Lambda_prompt = 150e-6               #
+                                          150 µs
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.101 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no µ (U+00B5) in font cmmi10!
+Missing character: There is no µ (U+00B5) in font cmmi10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 98--101
+[]beta
+ []
+
+
+Overfull \hbox (79.7439pt too wide) in paragraph at lines 98--101
+beta$[][]\OML/cmm/m/it/10 :sum\OT1/cmr/m/n/10 ()0\OML/cmm/m/it/10 :\OT1/cmr/m/n
+/10 006552(1$\nullfont )
+ []
+
+
+Overfull \hbox (42.23695pt too wide) in paragraph at lines 98--101
+Lambda$[][]\OML/cmm/m/it/10 rompt \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (27.43411pt too wide) in paragraph at lines 98--101
+\OT1/cmr/m/n/10 150\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (76.24237pt too wide) in paragraph at lines 98--101
+\OT1/cmr/m/n/10 6150\OML/cmm/m/it/10 st[]nalysis \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 98--101
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 d
+     ef rho_factory(rho_max: float):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.103 def rho_
+            factory(rho_max: float):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.106 return rho_
+               max if t >= 0 else 0.0
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.108 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 103--108
+[]def
+ []
+
+
+Overfull \hbox (76.74669pt too wide) in paragraph at lines 103--108
+rho$[][]\OML/cmm/m/it/10 actory\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rho[]ax \OT1/c
+mr/m/n/10 :
+ []
+
+
+Overfull \hbox (32.34146pt too wide) in paragraph at lines 103--108
+\OML/cmm/m/it/10 float\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (87.00128pt too wide) in paragraph at lines 103--108
+\OT1/cmr/m/n/10 """\OML/cmm/m/it/10 Zwracarho\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+t\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (36.77324pt too wide) in paragraph at lines 103--108
+\OML/cmm/m/it/10 rho[]ax\OT1/cmr/m/n/10 [$\nullfont ]
+ []
+
+
+Overfull \hbox (49.95909pt too wide) in paragraph at lines 103--108
+rho$[][]\OML/cmm/m/it/10 axift >\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (79.92966pt too wide) in paragraph at lines 103--108
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 else\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/c
+mr/m/n/10 0\OML/cmm/m/it/10 returnrho$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 r
+     ho_max_1 = 1.5
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.109 rho_
+        max_1 = 1.5
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.117 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (53.63892pt too wide) in paragraph at lines 109--117
+[]rho$[][]\OML/cmm/m/it/10 ax[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.81491pt too wide) in paragraph at lines 109--117
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 rho[]ax[] 
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.81491pt too wide) in paragraph at lines 109--117
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 rho[]ax[] 
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.81491pt too wide) in paragraph at lines 109--117
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 rho[]ax[] 
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (66.81493pt too wide) in paragraph at lines 109--117
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 rho[]ax[]\
+OT1/cmr/m/n/10 0 =
+ []
+
+
+Overfull \hbox (43.73152pt too wide) in paragraph at lines 109--117
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 rho\OT1/cm
+r/m/n/10 1 =
+ []
+
+
+Overfull \hbox (125.9181pt too wide) in paragraph at lines 109--117
+\OML/cmm/m/it/10 rho[]actory\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rho[]ax[]\OT1/cmr
+/m/n/10 )\OML/cmm/m/it/10 rho\OT1/cmr/m/n/10 2 =
+ []
+
+
+Overfull \hbox (125.9181pt too wide) in paragraph at lines 109--117
+\OML/cmm/m/it/10 rho[]actory\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rho[]ax[]\OT1/cmr
+/m/n/10 )\OML/cmm/m/it/10 rho\OT1/cmr/m/n/10 3 =
+ []
+
+
+Overfull \hbox (94.9644pt too wide) in paragraph at lines 109--117
+\OML/cmm/m/it/10 rho[]actory\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rho[]ax[]\OT1/cmr
+/m/n/10 )$ 
+ []
+
+luaotfload | db : Font names database loaded from /home/piegus/.texlive2023/texm
+f-var/luatex-cache/generic/names/luaotfload-names.luc.gz
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 
+    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+Missing character: There is no K (U+004B) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no ó (U+00F3) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no = (U+003D) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no Z (U+005A) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no P (U+0050) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no = (U+003D) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no v (U+0076) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no ) (U+0029) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no v (U+0076) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no ) (U+0029) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no [ (U+005B) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no ] (U+005D) in font nullfont!
+Missing character: There is no = (U+003D) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no = (U+003D) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no M (U+004D) in font nullfont!
+Missing character: There is no 2 (U+0032) in font nullfont!
+Missing character: There is no 5 (U+0035) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no 9 (U+0039) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no 8 (U+0038) in font nullfont!
+Missing character: There is no D (U+0044) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no 1 (U+0031) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no [ (U+005B) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no ] (U+005D) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no = (U+003D) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no = (U+003D) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no ) (U+0029) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no 1 (U+0031) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no g (U+0067) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no T (U+0054) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no ) (U+0029) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no 1 (U+0031) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no g (U+0067) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no ) (U+0029) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no ) (U+0029) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no K (U+004B) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no j (U+006A) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no U (U+0055) in font nullfont!
+Missing character: There is no S (U+0053) in font nullfont!
+Missing character: There is no T (U+0054) in font nullfont!
+Missing character: There is no A (U+0041) in font nullfont!
+Missing character: There is no W (U+0057) in font nullfont!
+Missing character: There is no I (U+0049) in font nullfont!
+Missing character: There is no E (U+0045) in font nullfont!
+Missing character: There is no N (U+004E) in font nullfont!
+Missing character: There is no I (U+0049) in font nullfont!
+Missing character: There is no A (U+0041) in font nullfont!
+Missing character: There is no M (U+004D) in font nullfont!
+Missing character: There is no A (U+0041) in font nullfont!
+Missing character: There is no T (U+0054) in font nullfont!
+Missing character: There is no P (U+0050) in font nullfont!
+Missing character: There is no L (U+004C) in font nullfont!
+Missing character: There is no O (U+004F) in font nullfont!
+Missing character: There is no T (U+0054) in font nullfont!
+Missing character: There is no L (U+004C) in font nullfont!
+Missing character: There is no I (U+0049) in font nullfont!
+Missing character: There is no B (U+0042) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no P (U+0050) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no [ (U+005B) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no D (U+0044) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no j (U+006A) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no V (U+0056) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no S (U+0053) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no L (U+004C) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no S (U+0053) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no C (U+0043) in font nullfont!
+Missing character: There is no M (U+004D) in font nullfont!
+Missing character: There is no U (U+0055) in font nullfont!
+Missing character: There is no S (U+0053) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no N (U+004E) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no R (U+0052) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no ] (U+005D) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ł (U+0142) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no g (U+0067) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no ą (U+0105) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no 1 (U+0031) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no 2 (U+0032) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no 2 (U+0032) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no g (U+0067) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no 2 (U+0032) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no x (U+0078) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no 1 (U+0031) in font nullfont!
+Missing character: There is no 4 (U+0034) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no z (U+007A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no 1 (U+0031) in font nullfont!
+Missing character: There is no 4 (U+0034) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no g (U+0067) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no 1 (U+0031) in font nullfont!
+Missing character: There is no 4 (U+0034) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no v (U+0076) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no g (U+0067) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no p (U+0070) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no 3 (U+0033) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no , (U+002C) in font nullfont!
+Missing character: There is no ' (U+0027) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no g (U+0067) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no = (U+003D) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no ) (U+0029) in font nullfont!
+Missing character: There is no L (U+004C) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no m (U+006D) in font nullfont!
+Missing character: There is no b (U+0062) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no ] (U+005D) in font nullfont!
+Missing character: There is no j (U+006A) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no j (U+006A) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no s (U+0073) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no k (U+006B) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no y (U+0079) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no c (U+0063) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no w (U+0077) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no i (U+0069) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no = (U+003D) in font nullfont!
+Missing character: There is no 0 (U+0030) in font nullfont!
+Missing character: There is no . (U+002E) in font nullfont!
+Missing character: There is no " (U+0022) in font nullfont!
+Missing character: There is no " (U+0022) in font nullfont!
+Missing character: There is no " (U+0022) in font nullfont!
+Missing character: There is no d (U+0064) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no ( (U+0028) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no ) (U+0029) in font nullfont!
+Missing character: There is no - (U+002D) in font nullfont!
+Missing character: There is no > (U+003E) in font nullfont!
+Missing character: There is no f (U+0066) in font nullfont!
+Missing character: There is no l (U+006C) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no a (U+0061) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no : (U+003A) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no e (U+0065) in font nullfont!
+Missing character: There is no t (U+0074) in font nullfont!
+Missing character: There is no u (U+0075) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no n (U+006E) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+Missing character: There is no r (U+0072) in font nullfont!
+Missing character: There is no h (U+0068) in font nullfont!
+Missing character: There is no o (U+006F) in font nullfont!
+]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 d
+     ef kinetics_matrix(t: float, rho_func) -> np.ndarray:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.119 def kinetics_
+                 matrix(t: float, rho_func) -> np.ndarray:
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.120 r = rho_func(t)  #
+                       r w $, czyli ρ = r * β
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.122 A[0, 0]  = (r*beta - beta) / Lambda_
+                                        prompt   # (ρ - β)/Λ (dla ρ w $)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.122 A[0, 0]  = (r*beta - beta) / Lambda_prompt   #
+                                                   (ρ - β)/Λ (dla ρ w $)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ρ (U+03C1) in font cmmi10!
+Missing character: There is no β (U+03B2) in font cmmi10!
+Missing character: There is no Λ (U+039B) in font cmmi10!
+Missing character: There is no ρ (U+03C1) in font cmmi10!
+Missing character: There is no ρ (U+03C1) in font cmmi10!
+! Missing $ inserted.
+<inserted text> 
+$
+l.123 A[0, 1:] = lambda_
+                      i
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.127 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 119--127
+[]def
+ []
+
+
+Overfull \hbox (43.4984pt too wide) in paragraph at lines 119--127
+kinetics$[][]\OML/cmm/m/it/10 atrix\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t \OT1/cmr
+/m/n/10 :
+ []
+
+
+Overfull \hbox (86.20044pt too wide) in paragraph at lines 119--127
+\OML/cmm/m/it/10 float; rho[]unc\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@ \OML/cmm/
+m/it/10 >
+ []
+
+
+Overfull \hbox (55.9862pt too wide) in paragraph at lines 119--127
+\OML/cmm/m/it/10 np:ndarray \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (15.34488pt too wide) in paragraph at lines 119--127
+\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (60.24329pt too wide) in paragraph at lines 119--127
+\OML/cmm/m/it/10 rho[]unc\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\O
+ML/cmm/m/it/10 rw$\nullfont ,
+ []
+
+
+Overfull \hbox (43.34814pt too wide) in paragraph at lines 119--127
+Lambda$[][]\OML/cmm/m/it/10 rompt\OT1/cmr/m/n/10 ( \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (33.8774pt too wide) in paragraph at lines 119--127
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dlaw$\null
+font )
+ []
+
+
+Overfull \hbox (24.1626pt too wide) in paragraph at lines 119--127
+lambda$[][]\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 [1 :
+ []
+
+
+Overfull \hbox (22.77773pt too wide) in paragraph at lines 119--127
+\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0] =
+ []
+
+
+Overfull \hbox (114.34299pt too wide) in paragraph at lines 119--127
+\OML/cmm/m/it/10 beta[]=Lambda[]romptA\OT1/cmr/m/n/10 [1 :
+ []
+
+
+Overfull \hbox (14.99992pt too wide) in paragraph at lines 119--127
+\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1 :
+ []
+
+
+Overfull \hbox (13.3333pt too wide) in paragraph at lines 119--127
+\OT1/cmr/m/n/10 ] =
+ []
+
+
+Overfull \hbox (120.86269pt too wide) in paragraph at lines 119--127
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 np:diag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 la
+mbda[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 returnA$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 d
+     ef I(n: int = 7) -> np.ndarray:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 128--130
+[]def
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 d
+     ef Matrix_alpha(t: float, alpha: float, rho_func) -> np.ndarray:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.131 def Matrix_
+               alpha(t: float, alpha: float, rho_func) -> np.ndarray:
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.133 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 131--133
+[]def
+ []
+
+
+Overfull \hbox (37.15245pt too wide) in paragraph at lines 131--133
+Matrix$[][]\OML/cmm/m/it/10 lpha\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (57.44215pt too wide) in paragraph at lines 131--133
+\OML/cmm/m/it/10 float; alpha \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (86.20044pt too wide) in paragraph at lines 131--133
+\OML/cmm/m/it/10 float; rho[]unc\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@ \OML/cmm/
+m/it/10 >
+ []
+
+
+Overfull \hbox (55.9862pt too wide) in paragraph at lines 131--133
+\OML/cmm/m/it/10 np:ndarray \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (155.9597pt too wide) in paragraph at lines 131--133
+\OML/cmm/m/it/10 returnkinetics[]atrix\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; rho[
+]unc\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (29.5452pt too wide) in paragraph at lines 131--133
+\OML/cmm/m/it/10 alpha \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (12.95834pt too wide) in paragraph at lines 131--133
+\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 ()$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 d
+     ef p_alpha(alpha, t, rho_func):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.134 def p_
+          alpha(alpha, t, rho_func):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{python}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \end{python}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.138 \end{python}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no α (U+03B1) in font cmmi10!
+Missing character: There is no α (U+03B1) in font cmmi10!
+Missing character: There is no α (U+03B1) in font cmmi10!
+! Missing } inserted.
+<inserted text> 
+}
+l.138 \end{python}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.139 \subsection
+               {Przebieg mocy reaktora w czasie}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment python undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 \begin{python}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 134--144
+[]def
+ []
+
+
+Overfull \hbox (111.1121pt too wide) in paragraph at lines 134--144
+p$[][]\OML/cmm/m/it/10 lpha\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 alpha; t; rho[]unc\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (172.37215pt too wide) in paragraph at lines 134--144
+\OT1/cmr/m/n/10 """\OML/cmm/m/it/10 Wielomiancharakterystycznyp\OT1/cmr/m/n/10 
+() =
+ []
+
+
+Overfull \hbox (32.63896pt too wide) in paragraph at lines 134--144
+\OML/cmm/m/it/10 det\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (61.94797pt too wide) in paragraph at lines 134--144
+\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 """\OML/cm
+m/m/it/10 alpha \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (407.15897pt too wide) in paragraph at lines 134--144
+\OML/cmm/m/it/10 np:atleast[]d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 alpha\OT1/cmr/m
+/n/10 )\OML/cmm/m/it/10 returnnp:array\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 np:lina
+lg:det\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Matrix[]lpha\OT1/cmr/m/n/10 (\OML/cmm/m
+/it/10 t; a; rho[]unc\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 forainalpha\OT1/cmr/m/n
+/10 ])$
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 	t
+      _step = 50  # chwila skoku ρ
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.145 	t_
+       step = 50  # chwila skoku ρ
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.145 	t_step = 50  #
+                    chwila skoku ρ
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.146 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ρ (U+03C1) in font cmmi10!
+
+Overfull \hbox (48.12846pt too wide) in paragraph at lines 145--146
+[]t$[][]\OML/cmm/m/it/10 tep \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (65.73001pt too wide) in paragraph at lines 145--146
+\OT1/cmr/m/n/10 50\OML/cmm/m/it/10 chwilaskoku$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.147 	#
+       czasy wejścia w reżim liniowy (Twoje wyniki t_exp_slope, RELATYWNIE...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 	# c
+        zasy wejścia w reżim liniowy (Twoje wyniki t_exp_slope, RELATYWNIE...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.147 ... wejścia w reżim liniowy (Twoje wyniki t_
+                                                  exp_slope, RELATYWNIE do t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.149 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 147--149
+[]czasy
+ []
+
+
+Overfull \hbox (229.80734pt too wide) in paragraph at lines 147--149
+t$[][]\OML/cmm/m/it/10 xp[]lope; RELATYWNIEdot[]tep\OT1/cmr/m/n/10 )\OML/cmm/m/
+it/10 T[]XP[]LOPE \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (135.55542pt too wide) in paragraph at lines 147--149
+[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150 	d
+      ef plot_case_sum(
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.150 	def plot_
+              case_sum(
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.155 	t_mark_rel=None,            #
+                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.160 	#
+       siatka czasu
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.163 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ρ (U+03C1) in font cmmi10!
+Missing character: There is no ρ (U+03C1) in font cmmi10!
+Missing character: There is no ł (U+0142) in font cmmi10!
+Missing character: There is no ł (U+0142) in font cmmi10!
+Missing character: There is no ó (U+00F3) in font cmmi10!
+Missing character: There is no ó (U+00F3) in font cmmi10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 150--163
+[]def
+ []
+
+
+Overfull \hbox (184.45308pt too wide) in paragraph at lines 150--163
+plot$[][]\OML/cmm/m/it/10 ase[]um\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rho[]al; t[]
+ange; color; show[]tep \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.25742pt too wide) in paragraph at lines 150--163
+\OML/cmm/m/it/10 True; show[]om[]egment \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (100.72127pt too wide) in paragraph at lines 150--163
+\OML/cmm/m/it/10 True; segment[]el[]en \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.53137pt too wide) in paragraph at lines 150--163
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 02\OML/cmm/m/it/10 ; t[]ark[
+]el \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (38.51962pt too wide) in paragraph at lines 150--163
+\OML/cmm/m/it/10 None; \OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (118.74098pt too wide) in paragraph at lines 150--163
+\OT1/cmr/m/n/10 """\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 =n\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 poskokuwt[]tep \
+OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (198.96187pt too wide) in paragraph at lines 150--163
+\OML/cmm/m/it/10 penasumamodw\OT1/cmr/m/n/10 """\OML/cmm/m/it/10 siatkaczasut[]
+tart; t[]nd \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.27896pt too wide) in paragraph at lines 150--163
+\OML/cmm/m/it/10 t[]anget \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (188.34225pt too wide) in paragraph at lines 150--163
+\OML/cmm/m/it/10 np:linspace\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]tart; t[]nd; ma
+x\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 ; int\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 t[]
+nd \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (34.07184pt too wide) in paragraph at lines 150--163
+\OML/cmm/m/it/10 t[]tart\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (26.66675pt too wide) in paragraph at lines 150--163
+\OT1/cmr/m/n/10 400)))$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.164 	#
+       stan tuż przed skokiem (ρ=0): n0=1, C0_i = beta_i/(Λ λ_i)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164 	# s
+        tan tuż przed skokiem (ρ=0): n0=1, C0_i = beta_i/(Λ λ_i)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.164 	# stan tuż przed skokiem (ρ=0): n0=1, C0_
+                                                i = beta_i/(Λ λ_i)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.168 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no Λ (U+039B) in font cmmi10!
+Missing character: There is no Λ (U+039B) in font cmmi10!
+Missing character: There is no λ (U+03BB) in font cmmi10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 164--168
+[]stan
+ []
+
+
+Overfull \hbox (13.8848pt too wide) in paragraph at lines 164--168
+C0$[][] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (58.83919pt too wide) in paragraph at lines 164--168
+\OML/cmm/m/it/10 beta[]=\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 0 =
+ []
+
+
+Overfull \hbox (36.19583pt too wide) in paragraph at lines 164--168
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 C\OT1/cmr/
+m/n/10 0 =
+ []
+
+
+Overfull \hbox (102.39859pt too wide) in paragraph at lines 164--168
+\OML/cmm/m/it/10 beta[]=\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Lambda[]rompt \OMS/cm
+sy/m/n/10 
+ []
+
+
+Overfull \hbox (44.24721pt too wide) in paragraph at lines 164--168
+\OML/cmm/m/it/10 lambda[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (53.2582pt too wide) in paragraph at lines 164--168
+\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 0[]\OML/cm
+m/m/it/10 tate \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.84543pt too wide) in paragraph at lines 164--168
+\OML/cmm/m/it/10 np:concatenate\OT1/cmr/m/n/10 (([\OML/cmm/m/it/10 n\OT1/cmr/m/
+n/10 0]\OML/cmm/m/it/10 ; C\OT1/cmr/m/n/10 0))$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.169 	#
+       macierz po skoku i dekompozycja
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 	# m
+        acierz po skoku i dekompozycja
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.170 	rho_
+         fun = RHO_FUN[rho_val] if 'RHO_FUN' in globals() else rho_factory(r...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.174 	N_k = a_k * V[0, :]   #
+                             wkłady neutronowe
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.175 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ł (U+0142) in font cmmi10!
+Missing character: There is no ł (U+0142) in font cmmi10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 169--175
+[]macierz
+ []
+
+
+Overfull \hbox (27.46652pt too wide) in paragraph at lines 169--175
+rho$[][]\OML/cmm/m/it/10 un \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (331.3577pt too wide) in paragraph at lines 169--175
+\OML/cmm/m/it/10 RHO[]UN\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 rho[]al\OT1/cmr/m/n/1
+0 ]\OML/cmm/m/it/10 if[]RHO[]UN[]inglobals\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 els
+erho[]actory\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rho[]al\OT1/cmr/m/n/10 )\OML/cmm/
+m/it/10 A[]ost \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (175.96883pt too wide) in paragraph at lines 169--175
+\OML/cmm/m/it/10 kinetics[]atrix\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/
+n/10 0\OML/cmm/m/it/10 ; rho[]un\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 alpha[]; V \O
+T1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (109.84958pt too wide) in paragraph at lines 169--175
+\OML/cmm/m/it/10 np:linalg:eig\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]ost\OT1/cmr/
+m/n/10 )\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (139.21153pt too wide) in paragraph at lines 169--175
+\OML/cmm/m/it/10 np:linalg:solve\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V; y\OT1/cmr/
+m/n/10 0[]\OML/cmm/m/it/10 tate\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 N[] \OT1/cmr/m
+/n/10 =
+ []
+
+
+Overfull \hbox (15.20607pt too wide) in paragraph at lines 169--175
+\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (23.05556pt too wide) in paragraph at lines 169--175
+\OML/cmm/m/it/10 V\OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (84.04424pt too wide) in paragraph at lines 169--175
+\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 wkadyneutronowe$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 	a
+      k = np.real(alpha_k)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.176 	ak = np.real(alpha_
+                        k)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.178 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 176--178
+[]ak
+ []
+
+
+Overfull \hbox (34.01039pt too wide) in paragraph at lines 176--178
+np.real(alpha$[][]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Nk \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.45616pt too wide) in paragraph at lines 176--178
+\OML/cmm/m/it/10 np:real\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 N[]\OT1/cmr/m/n/10 )$
+ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.179 	#
+       n(t) – pełna suma modów; przed skokiem 1
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 	# n
+        (t) – pełna suma modów; przed skokiem 1
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.180 	y = np.ones_
+                 like(t, dtype=float)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.185 	exp_arg = np.clip(exp_arg, -700.0, 700.0)   #
+                                                   anty-over/underflow
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.188 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 179--188
+[]n(t)
+ []
+
+
+Overfull \hbox (62.95673pt too wide) in paragraph at lines 179--188
+np.ones$[][]\OML/cmm/m/it/10 ike\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; dtype \OT1
+/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (46.12161pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 float\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 m \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (21.94443pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 t >\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (83.07611pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 t[]tepifnp:any\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m\OT1/cmr/m/n/
+10 ) :
+ []
+
+
+Overfull \hbox (25.1771pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 tau \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.72462pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 m\OT1/cmr/m/n/10 ] \OMS/cms
+y/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (61.89784pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 t[]tepexp[]rg \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.80424pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 np:outer\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 tau; ak\OT1/cmr/m/n/
+10 )\OML/cmm/m/it/10 exp[]rg \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (157.89304pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 np:clip\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 exp[]rg; \OMS/cmsy/m/
+n/10 ^^@\OT1/cmr/m/n/10 700\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 
+; \OT1/cmr/m/n/10 700\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 anty 
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (106.1323pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 over=underflown[]ull \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (23.53473pt too wide) in paragraph at lines 179--188
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Nk \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (126.58734pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 np:exp\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 exp[]rg\OT1/cmr/m/n/10
+ ))\OML/cmm/m/it/10 :sum\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 axis \OT1/cmr/m/n/10 
+=
+ []
+
+
+Overfull \hbox (39.04173pt too wide) in paragraph at lines 179--188
+\OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 m\OT1/cmr
+/m/n/10 ] =
+ []
+
+
+Overfull \hbox (78.83545pt too wide) in paragraph at lines 179--188
+\OML/cmm/m/it/10 np:clip\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n[]ull; \OT1/cmr/m/n/
+10 1\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (47.98969pt too wide) in paragraph at lines 179--188
+\OT1/cmr/m/n/10 300\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 e\OT1/c
+mr/m/n/10 300)$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.189 	#
+       ukryj wszystko < 1 tylko dla głównej krzywej
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 	# u
+        kryj wszystko < 1 tylko dla głównej krzywej
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 189--191
+[]ukryj
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.192 	#
+       rysunek
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192 	# r
+        ysunek
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 192--195
+[]rysunek
+ []
+
+
+Overfull \hbox (15.72566pt too wide) in paragraph at lines 192--195
+label=fr"$\OML/cmm/m/it/10  \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.69911pt too wide) in paragraph at lines 192--195
+[]\OT1/cmr/m/n/10 $$\nullfont ") 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 	a
+      x.set_yscale("log")
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.196 	ax.set_
+            yscale("log")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.199 ...pos: ('1' if np.isclose(v, 1.0) else r'$10^
+                                                  {%d}$' % int(np.log10(v)))...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.202 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.202 	
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (306.61714pt too wide) in paragraph at lines 196--202
+[]ax.set$[][]\OML/cmm/m/it/10 scale\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 log\OT1/c
+mr/m/n/10 ")\OML/cmm/m/it/10 ax:yaxis:set[]ajor[]ocator\OT1/cmr/m/n/10 (\OML/cm
+m/m/it/10 ticker:LogLocator\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 base \OT1/cmr/m/n/
+10 =
+ []
+
+
+Overfull \hbox (314.3858pt too wide) in paragraph at lines 196--202
+\OT1/cmr/m/n/10 10))\OML/cmm/m/it/10 ax:yaxis:set[]ajor[]ormatter\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 ticker:FuncFormatter\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 lambda
+v; pos \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (322.00208pt too wide) in paragraph at lines 196--202
+\OT1/cmr/m/n/10 ([]1[]\OML/cmm/m/it/10 ifnp:isclose\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 v; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 
+elser[]$\nullfont 10$[][]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 	y
+      _pos = y[(y > 0) & np.isfinite(y)]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.203 	y_
+       pos = y[(y > 0) & np.isfinite(y)]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.203 	y_pos = y[(y > 0) &
+                         np.isfinite(y)]
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.208 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (44.71259pt too wide) in paragraph at lines 203--208
+[]y$[][]\OML/cmm/m/it/10 os \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (27.74539pt too wide) in paragraph at lines 203--208
+\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 [(\OML/cmm/m/it/10 y >
+ []
+
+
+Overfull \hbox (141.24994pt too wide) in paragraph at lines 203--208
+\OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 np:isfinite\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
+ y\OT1/cmr/m/n/10 )]\OML/cmm/m/it/10 ify[]os:size >\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (10.55551pt too wide) in paragraph at lines 203--208
+\OT1/cmr/m/n/10 2 :
+ []
+
+
+Overfull \hbox (35.5984pt too wide) in paragraph at lines 203--208
+\OML/cmm/m/it/10 ymax \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (107.18817pt too wide) in paragraph at lines 203--208
+\OML/cmm/m/it/10 min\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 float\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 y[]os:max\OT1/cmr/m/n/10 ()) \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (64.81255pt too wide) in paragraph at lines 203--208
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05\OML/cmm/m/it/10 ; \OT1/cm
+r/m/n/10 1\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 3)\OML/cmm/m/it/10 top \OT1/cmr/m/n
+/10 =
+ []
+
+
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 203--208
+\OT1/cmr/m/n/10 10 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (247.52928pt too wide) in paragraph at lines 203--208
+\OMS/cmsy/m/n/10 \OML/cmm/m/it/10 np:ceil\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 np:l
+og\OT1/cmr/m/n/10 10(\OML/cmm/m/it/10 ymax\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 ax:
+set[]lim\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 85\OML/cmm/m/it/10 
+; min\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; top
+\OT1/cmr/m/n/10 ))$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 	e
+      lse:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.210 	ax.set_
+            ylim(0.01, 10.0)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.211 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 209--211
+[]else:
+ []
+
+
+Overfull \hbox (67.99046pt too wide) in paragraph at lines 209--211
+ax.set$[][]\OML/cmm/m/it/10 lim\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n
+/10 01\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 10\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0)$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 	i
+      f show_step:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.212 	if show_
+             step:
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.214 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ρ (U+03C1) in font cmmi10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 212--214
+[]if
+ []
+
+
+Overfull \hbox (23.12845pt too wide) in paragraph at lines 212--214
+show$[][]\OML/cmm/m/it/10 tep \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (109.33528pt too wide) in paragraph at lines 212--214
+\OML/cmm/m/it/10 ax:axvline\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]tep; color \OT1
+/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (45.64584pt too wide) in paragraph at lines 212--214
+\OT1/cmr/m/n/10 "0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 3"\OML/cmm/m/it/10 ; ls \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 212--214
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (38.38657pt too wide) in paragraph at lines 212--214
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; lw \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (40.5949pt too wide) in paragraph at lines 212--214
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; label \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (34.46535pt too wide) in paragraph at lines 212--214
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 skok\OT1/cmr/m/n/10 ")$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.215 	#
+       --- LINIA DOPASOWANIA (ostatnie 20% po skoku), czarna, przerywana ---
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 	# -
+        -- LINIA DOPASOWANIA (ostatnie 20% po skoku), czarna, przerywana ---
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.216 	mask_
+          post = np.isfinite(y) & (y > 0) & (t >= t_step)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.216 	mask_post = np.isfinite(y) &
+                                  (y > 0) & (t >= t_step)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.216 	mask_post = np.isfinite(y) & (y > 0) &
+                                            (t >= t_step)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `macro parameter character #' in math mode.
+l.221 ...pt = np.polyfit(t_fit, np.log(y_fit), 1)  #
+                                                   ln(y)=slope*t + intercept
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.222 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 215--222
+[]---
+ []
+
+
+Overfull \hbox (28.3237pt too wide) in paragraph at lines 215--222
+20mask$[][]\OML/cmm/m/it/10 ost \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (81.82167pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 np:isfinite\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 
+)(\OML/cmm/m/it/10 y >
+ []
+
+
+Overfull \hbox (34.72224pt too wide) in paragraph at lines 215--222
+\OT1/cmr/m/n/10 0)(\OML/cmm/m/it/10 t >\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (57.00778pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 t[]tep\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 t[]ost \OT1/cmr/m/n/10
+ =
+ []
+
+
+Overfull \hbox (88.56537pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 mask[]ost\OT1/cmr/m/n/10 ]; \OML/cmm/m/it/10 y[]ost \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (122.33191pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 mask[]ost\OT1/cmr/m/n/10 ]\
+OML/cmm/m/it/10 ift[]ost:size >\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (10.55551pt too wide) in paragraph at lines 215--222
+\OT1/cmr/m/n/10 5 :
+ []
+
+
+Overfull \hbox (31.19398pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 k[]ail \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (106.14978pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 max\OT1/cmr/m/n/10 (5\OML/cmm/m/it/10 ; int\OT1/cmr/m/n/10 (\O
+ML/cmm/m/it/10 np:ceil\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 20 \O
+MS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (80.10994pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 t[]ost:size\OT1/cmr/m/n/10 )))\OML/cmm/m/it/10 t[]it \OT1/cmr/
+m/n/10 =
+ []
+
+
+Overfull \hbox (58.12886pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 t[]ost\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 k[
+]ail \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (34.92085pt too wide) in paragraph at lines 215--222
+\OT1/cmr/m/n/10 ]; \OML/cmm/m/it/10 y[]it \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.42056pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 y[]ost\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 k[
+]ail \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (80.31094pt too wide) in paragraph at lines 215--222
+\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 slope; intercept \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (167.34505pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 np:polyfit\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]it; np:log\OT1/
+cmr/m/n/10 (\OML/cmm/m/it/10 y[]it\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/
+m/n/10 1)\OML/cmm/m/it/10 ln\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 
+) =
+ []
+
+
+Overfull \hbox (27.40283pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 slope \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (40.13042pt too wide) in paragraph at lines 215--222
+\OML/cmm/m/it/10 intercept$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 	t
+      _line = np.linspace(t_start, t_end, 400)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.223 	t_
+       line = np.linspace(t_start, t_end, 400)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.228 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ą (U+0105) in font cmmi10!
+Missing character: There is no ą (U+0105) in font cmmi10!
+
+Overfull \hbox (47.72871pt too wide) in paragraph at lines 223--228
+[]t$[][]\OML/cmm/m/it/10 ine \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (159.02147pt too wide) in paragraph at lines 223--228
+\OML/cmm/m/it/10 np:linspace\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]tart; t[]nd; \
+OT1/cmr/m/n/10 400)\OML/cmm/m/it/10 y[]ine \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (81.01129pt too wide) in paragraph at lines 223--228
+\OML/cmm/m/it/10 np:exp\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 intercept \OT1/cmr/m/n
+/10 +
+ []
+
+
+Overfull \hbox (27.40283pt too wide) in paragraph at lines 223--228
+\OML/cmm/m/it/10 slope \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (159.99727pt too wide) in paragraph at lines 223--228
+\OML/cmm/m/it/10 t[]ine\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ax:plot\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 t[]ine; y[]ine; linestyle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (76.43636pt too wide) in paragraph at lines 223--228
+\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (9\OML/cmm/m/it/10 ; \OT1/
+cmr/m/n/10 5))\OML/cmm/m/it/10 ; color \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (58.2153pt too wide) in paragraph at lines 223--228
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 black\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; lw \
+OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.32292pt too wide) in paragraph at lines 223--228
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; alpha \O
+T1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (57.15514pt too wide) in paragraph at lines 223--228
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ; zorder \
+OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (40.5949pt too wide) in paragraph at lines 223--228
+\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ; label \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (130.42305pt too wide) in paragraph at lines 223--228
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 rozwizanieasymptotyczne\OT1/cmr/m/n/10 ")$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.229 	#
+       ewentualna korekta ylim, gdy linia wychodzi wyżej
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 	# e
+        wentualna korekta ylim, gdy linia wychodzi wyżej
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.230 	y_
+       line_pos = y_line[(y_line > 0) & np.isfinite(y_line)]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.230 	y_line_pos = y_line[(y_line > 0) &
+                                        np.isfinite(y_line)]
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.235 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 229--235
+[]ewentualna
+ []
+
+
+Overfull \hbox (41.88579pt too wide) in paragraph at lines 229--235
+y$[][]\OML/cmm/m/it/10 ine[]os \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.37424pt too wide) in paragraph at lines 229--235
+\OML/cmm/m/it/10 y[]ine\OT1/cmr/m/n/10 [(\OML/cmm/m/it/10 y[]ine >
+ []
+
+
+Overfull \hbox (162.45975pt too wide) in paragraph at lines 229--235
+\OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 np:isfinite\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
+ y[]ine\OT1/cmr/m/n/10 )]\OML/cmm/m/it/10 ify[]ine[]os:size \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (45.05762pt too wide) in paragraph at lines 229--235
+\OML/cmm/m/it/10 y[]ll[]ax \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (498.83795pt too wide) in paragraph at lines 229--235
+\OML/cmm/m/it/10 max\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 float\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 np:nanmax\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y[]os\OT1/cmr/m/n/10 ))
+\OML/cmm/m/it/10 ify[]os:sizeelse\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/
+n/10 0\OML/cmm/m/it/10 ; float\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 np:nanmax\OT1/c
+mr/m/n/10 (\OML/cmm/m/it/10 y[]ine[]os\OT1/cmr/m/n/10 )))\OML/cmm/m/it/10 ax:set
+[]lim\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 85\OML/cmm/m/it/10 ; mi
+n\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; y[]ll[
+]ax \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (25.55563pt too wide) in paragraph at lines 229--235
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05))$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.236 	#
+       --- ANNOTATE: napis nad linią, równoległy do niej (BEZ strzałki) ---
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236 	# -
+        -- ANNOTATE: napis nad linią, równoległy do niej (BEZ strzałki) ---
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.237 	tx = t_
+            step + (t_mark_rel if (t_mark_rel is not None) else 0.8*(t_end -...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.240 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 236--240
+[]---
+ []
+
+
+Overfull \hbox (25.35075pt too wide) in paragraph at lines 236--240
+t$[][]\OML/cmm/m/it/10 tep \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (180.7739pt too wide) in paragraph at lines 236--240
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]ark[]elif\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
+ t[]ark[]elisnotNone\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 else\OT1/cmr/m/n/10 0\OML
+/cmm/m/it/10 :\OT1/cmr/m/n/10 8 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (30.77914pt too wide) in paragraph at lines 236--240
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]nd \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (52.84262pt too wide) in paragraph at lines 236--240
+\OML/cmm/m/it/10 t[]tart\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 tx \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (121.61665pt too wide) in paragraph at lines 236--240
+\OML/cmm/m/it/10 np:clip\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 tx; t[]tart; t[]nd\OT
+1/cmr/m/n/10 )\OML/cmm/m/it/10 yx \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (81.01129pt too wide) in paragraph at lines 236--240
+\OML/cmm/m/it/10 np:exp\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 intercept \OT1/cmr/m/n
+/10 +
+ []
+
+
+Overfull \hbox (27.40283pt too wide) in paragraph at lines 236--240
+\OML/cmm/m/it/10 slope \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (13.21529pt too wide) in paragraph at lines 236--240
+\OML/cmm/m/it/10 tx\OT1/cmr/m/n/10 )$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.241 	#
+       kąt linii w pikselach (poprawny dla osi log)F
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 	# k
+        ąt linii w pikselach (poprawny dla osi log)F
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.242 	angle_
+           offset_deg = -3 # możesz doprecyzować np. +2.0 / -1.5
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.242 	angle_offset_deg = -3 #
+                             możesz doprecyzować np. +2.0 / -1.5
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.250 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ż (U+017C) in font cmmi10!
+Missing character: There is no ż (U+017C) in font cmmi10!
+Missing character: There is no ć (U+0107) in font cmmi10!
+Missing character: There is no ć (U+0107) in font cmmi10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 241--250
+[]kąt
+ []
+
+
+Overfull \hbox (54.34973pt too wide) in paragraph at lines 241--250
+angle$[][]\OML/cmm/m/it/10 ffset[]eg \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (119.19824pt too wide) in paragraph at lines 241--250
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 moeszdoprecyzowanp: \OT1/
+cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (25.55563pt too wide) in paragraph at lines 241--250
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 = \OMS/cms
+y/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (42.48692pt too wide) in paragraph at lines 241--250
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 dt[]x \OT1
+/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (44.93176pt too wide) in paragraph at lines 241--250
+\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 trans \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.43658pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 ax:transDataX; Y \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (305.53807pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 trans:transform\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 tx; yx\OT1/c
+mr/m/n/10 ))\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 ata;[] trans:i
+nverted\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 :transform\OT1/cmr/m/n/10 ((\OML/cmm/
+m/it/10 X \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (79.06648pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 dt[]x; Y\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 2[
+]\OML/cmm/m/it/10 ata \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (81.01129pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 np:exp\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 intercept \OT1/cmr/m/n
+/10 +
+ []
+
+
+Overfull \hbox (27.40283pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 slope \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (75.54712pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 ata\OT1/cmr/m/n/10 )\OML/
+cmm/m/it/10 X\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; Y\OT1/cmr/m/n/10 2 =
+ []
+
+
+Overfull \hbox (189.39671pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 trans:transform\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 x\OT1/cmr/m/
+n/10 2[]\OML/cmm/m/it/10 ata; y\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 ata\OT1/cmr/
+m/n/10 ))\OML/cmm/m/it/10 angle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (124.28735pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 np:degrees\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 np:arctan\OT1/cmr/
+m/n/10 2(\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (32.65277pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 Y; X\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (24.62503pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 )) +
+ []
+
+
+Overfull \hbox (68.04776pt too wide) in paragraph at lines 241--250
+\OML/cmm/m/it/10 angle[]ffset[]eg$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.251 	a
+      x.annotate(
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.252 	r"$n(t)\ \propto\ e^{\dfrac
+                                {t}{T}}$",
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.254 ...ext=(0, 14), textcoords='offset points',  #
+                                                   „nad” linią
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.255 	rotation=angle, rotation_
+                              mode='anchor',
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.260 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 251--260
+[]ax.annotate(
+ []
+
+
+Overfull \hbox (27.94678pt too wide) in paragraph at lines 251--260
+r"$\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OMS/
+cmsy/m/n/10 /
+ []
+
+
+Overfull \hbox (13.97676pt too wide) in paragraph at lines 251--260
+\OML/cmm/m/it/10 e[]$\nullfont ",
+ []
+
+
+Overfull \hbox (35.66554pt too wide) in paragraph at lines 251--260
+rotation$[][]\OML/cmm/m/it/10 ode \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (62.67249pt too wide) in paragraph at lines 251--260
+\OML/cmm/m/it/10 anchor[]; ha \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (48.52315pt too wide) in paragraph at lines 251--260
+\OML/cmm/m/it/10 left[]; va \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (65.67316pt too wide) in paragraph at lines 251--260
+\OML/cmm/m/it/10 bottom[]; size \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (54.37735pt too wide) in paragraph at lines 251--260
+\OT1/cmr/m/n/10 20\OML/cmm/m/it/10 ; zorder \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (51.43404pt too wide) in paragraph at lines 251--260
+\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 ; clip[]n \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (29.51859pt too wide) in paragraph at lines 251--260
+\OML/cmm/m/it/10 False\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.261 	a
+      x.set_xlim(t_start, t_end)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.261 	ax.set_
+            xlim(t_start, t_end)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.263 	ax.set_ylabel(r"$n(t)/n_
+                             0$")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.266 	plt.tight_
+               layout()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.268 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (269.45752pt too wide) in paragraph at lines 261--268
+[]ax.set$[][]\OML/cmm/m/it/10 lim\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]tart; t[]
+nd\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ax:set[]label\OT1/cmr/m/n/10 ("\OML/cmm/m/i
+t/10 Czas; s\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 ax:set[]label\OT1/cmr/m/n/10 (\O
+ML/cmm/m/it/10 r\OT1/cmr/m/n/10 "$\nullfont n(t)/n$[][]$")
+ []
+
+
+Overfull \hbox (80.68076pt too wide) in paragraph at lines 261--268
+plt.tight$[][]\OML/cmm/m/it/10 ayout\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 plt:show\OT1/cmr/m/n/10 ()$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.269 	#
+       --- Trzy oddzielne wykresy z Twoimi t_exp_slope ---
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 	# -
+        -- Trzy oddzielne wykresy z Twoimi t_exp_slope ---
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.269 	# --- Trzy oddzielne wykresy z Twoimi t_
+                                             exp_slope ---
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.273 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 269--273
+[]---
+ []
+
+
+Overfull \hbox (44.80807pt too wide) in paragraph at lines 269--273
+t$[][]\OML/cmm/m/it/10 xp[]lope \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (15.5556pt too wide) in paragraph at lines 269--273
+\OMS/cmsy/m/n/10 ^^@ ^^@
+ []
+
+
+Overfull \hbox (211.87508pt too wide) in paragraph at lines 269--273
+\OML/cmm/m/it/10 plot[]ase[]um\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/
+10 5\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (47\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5\O
+ML/cmm/m/it/10 ; \OT1/cmr/m/n/10 53)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cm
+m/m/it/10 purple\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; t[]ark[]el \OT1/cmr/m/n/10 
+=
+ []
+
+
+Overfull \hbox (280.11978pt too wide) in paragraph at lines 269--273
+\OML/cmm/m/it/10 T[]XP[]LOPE\OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
+ 5])\OML/cmm/m/it/10 plot[]ase[]um\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (48\OML/cmm/m/it/10 ; \OT1/cmr/m/n/1
+0 53)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 blue\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; t[]ark[]el \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (292.47281pt too wide) in paragraph at lines 269--273
+\OML/cmm/m/it/10 T[]XP[]LOPE\OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
+ 0])\OML/cmm/m/it/10 plot[]ase[]um\OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 5\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (49\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
+ 8\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 50\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6)\OML
+/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 red\OT1/cmr/m/n/10 "\OML/cmm/m
+/it/10 ; t[]ark[]el \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (86.58272pt too wide) in paragraph at lines 269--273
+\OML/cmm/m/it/10 T[]XP[]LOPE\OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
+ 5])$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{python}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 \end{python}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.275 \subsection
+               {Kod uzywany do wyznaczenia efektywności}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275 \subsection{K
+                 od uzywany do wyznaczenia efektywności}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> kod.tex
+        
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 25 strings out of 478285
+ 100000,1977958 words of node,token memory allocated 42183 words of node memory still in use:
+   465 hlist, 1 disc, 26 local_par, 1 dir, 59 math, 874 glue, 453 kern, 217 pena
+lty, 3956 glyph, 106 attribute, 39 glue_spec, 106 attribute_list, 1 temp nodes
+   avail lists: 3:343,4:21,5:128,6:4,7:1292,8:464,9:88,10:20,11:1
+ 20348 multiletter control sequences out of 65536+600000
+ 25 fonts using 1345055 bytes
+ 23i,5n,23p,130b,132s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

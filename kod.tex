@@ -1,0 +1,468 @@
+\subsection{Kod do fitowania wyników z eksperymentu}
+\begin{python}
+import pandas as pd
+from zipfile import Path as ZipPath
+import matplotlib.pyplot as plt
+from pathlib import Path
+import pandas as pd
+import numpy as np
+from scipy.optimize import curve_fit
+import pandas as pd
+
+
+
+plt.rcParams.update({
+	"font.family": "serif",  # use serif/main font for text elements
+	"text.usetex": True,     # use inline math for ticks
+	"pgf.rcfonts": False     # don't setup fonts from rc parameters
+})
+fps = {x.stem: x for x in ZipPath('Dopasowanie.zip', at='/').iterdir()}
+fps     
+for k,v in fps.items():
+print(k, v.exists())
+%%time
+
+dfs = {}
+for k,v in fps.items():
+with v.open() as f:
+dfs[k] = pd.read_csv(f, parse_dates=['UTC'], index_col='UTC')
+df = pd.concat(
+[
+dfs["IRL-2.1"][["Flux, cps"]].rename(columns={"Flux, cps": "IRL-2.1"}),
+dfs["IRL-2.2"][["Flux, cps"]].rename(columns={"Flux, cps": "IRL-2.2"}),
+dfs["trpp"]
+],
+axis=1
+).sort_index()
+print(df.columns.tolist())
+print(dfs.keys())
+
+%%time
+fig, (ax1, ax2) = plt.subplots(nrows=2, figsize=(12,12), sharex=True)
+
+
+df.plot(
+ax=ax1,
+y=["IRL-2.1", "IRL-2.2"],
+logy=True,
+grid=True,
+marker=".",
+)
+
+# DÓŁ: TRPP
+df.plot(
+ax=ax2,
+y=["PAR", "PK2", "PK6", "PB1"],
+grid=True,
+marker=".",
+)
+
+ax1.legend()
+ax2.legend()
+plt.tight_layout()
+plt.show()
+
+
+ax1.legend()
+intervals = {
+	"zrzuty": slice("2025-12-08 19:55:30", "2025-12-08 21:30:30"),
+	"zrzut01": slice("2025-12-08 19:55:30", "2025-12-08 20:03:30"),
+	"zrzut02": slice("2025-12-08 20:07:30", "2025-12-08 20:11:30"),
+	"zrzut03": slice("2025-12-08 20:15:30", "2025-12-08 20:19:30"),
+	"zrzut04": slice("2025-12-08 20:23:30", "2025-12-08 20:27:30"),
+	"zrzut05": slice("2025-12-08 20:31:30", "2025-12-08 20:35:30"),
+	"zrzut06": slice("2025-12-08 20:39:30", "2025-12-08 20:43:30"),
+	"zrzut07": slice("2025-12-08 20:47:30", "2025-12-08 20:51:30"),
+	"zrzut08": slice("2025-12-08 20:55:30", "2025-12-08 20:59:30"),
+	"zrzut09": slice("2025-12-08 21:00:30", "2025-12-08 21:07:30"),
+	"zrzut10": slice("2025-12-08 21:08:30", "2025-12-08 21:12:30"),
+	"zrzut11": slice("2025-12-08 21:12:30", "2025-12-08 21:18:30"),
+}
+
+[(k, v.start, v.stop) for k, v in intervals.items()]
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+
+for name, sl in intervals.items():
+
+df_cut = df.loc[sl]
+if name == "zrzuty":
+continue
+if df_cut.empty:
+print(f"{name}: pusty zakres")
+continue
+
+fig, (ax1, ax2) = plt.subplots(
+nrows=2,
+figsize=(16, 12),
+sharex=True
+)
+
+
+df_cut.plot(
+ax=ax1,
+y=["IRL-2.1"],
+logy=True,
+grid=True,
+marker=".",
+)
+
+
+df_cut.plot(
+ax=ax2,
+y=["PK6"],
+grid=True,
+marker=".",
+)
+
+# format osi X
+ax1.set_title(f"{name} | {sl.start} → {sl.stop}")
+ax2.set_xlabel("UTC")
+
+plt.tight_layout()
+plt.show()
+
+df_cut = df.loc[intervals["zrzut01"]]
+
+fig, (ax1, ax2) = plt.subplots(nrows=2, figsize=(12,12), sharex=True)
+
+df_cut.plot(
+ax=ax1,
+y=["IRL-2.1"],
+logy=True,
+grid=True,
+marker=".",
+)
+
+df_cut.plot(
+ax=ax2,
+y=["PK6"],
+grid=True,
+marker=".",
+)
+
+plt.tight_layout()
+plt.show()
+cuts = {
+	"zrzut01": ("2025-12-08 19:57:30", "2025-12-08 20:01:30"),
+	"zrzut02": ("2025-12-08 20:08:40", "2025-12-08 20:09:45"),
+	"zrzut03": ("2025-12-08 20:17:15", "2025-12-08 20:18:05"),
+	"zrzut04": ("2025-12-08 20:25:05", "2025-12-08 20:26:10"),
+	"zrzut05": ("2025-12-08 20:32:48", "2025-12-08 20:33:43"),
+	"zrzut06": ("2025-12-08 20:41:08", "2025-12-08 20:41:53"),
+	"zrzut07": ("2025-12-08 20:49:13", "2025-12-08 20:50:08"),
+	"zrzut08": ("2025-12-08 20:56:33", "2025-12-08 20:57:33"),
+	"zrzut09": ("2025-12-08 21:02:50", "2025-12-08 21:03:40"),
+	"zrzut10": ("2025-12-08 21:09:22", "2025-12-08 21:10:12"),
+	"zrzut11": ("2025-12-08 21:14:59", "2025-12-08 21:15:34"),
+}
+
+for name, (t0, t1) in cuts.items():
+maly_df = df.loc[t0:t1]
+
+t = (maly_df.index - maly_df.index[0]).total_seconds()
+y = maly_df["IRL-2.1"]
+t
+from scipy.optimize import curve_fit
+import numpy as np
+import matplotlib.pyplot as plt
+
+b_i   = np.array([2.43e-4, 1.363e-3, 1.203e-3, 2.605e-3, 8.19e-4, 1.67e-4])
+lambda_i = np.array([1.27e-2, 3.17e-2, 1.15e-1, 3.11e-1, 1.40,   3.87   ])  # [1/s]
+B = b_i.sum()
+L = 146e-6
+
+def exp_fit(t, a, T):
+return np.exp(t/T) * a   
+
+def rho_T(T_hat, L,B, b_i, lambda_i):
+suma = np.sum((b_i) / ((1 /T_hat)+lambda_i))
+nie_suma = 1/(T_hat*B)
+rho = nie_suma * (L+ suma)
+return rho
+
+def sigma_rho_T(sigma_T, L,B, b_i, lambda_i, T_hat):
+suma = np.sum((b_i * lambda_i) / (B * (lambda_i*T_hat + 1)**2))
+nie_suma = L/((T_hat**2)*B)
+sigma_rho = (nie_suma + suma)*sigma_T
+return sigma_rho
+
+def pm(val, err, vfmt="{:.2f}", efmt="{:.2f}"):
+return f"{vfmt.format(val)} ± {efmt.format(err)}"
+
+wyniki = []
+
+fig, ax = plt.subplots(figsize=(20,12))
+
+for name, (t0, t1) in cuts.items():
+maly_df = df.loc[t0:t1, ["IRL-2.1"]].dropna()
+if maly_df.empty:
+print(name, "-> pusty wycinek")
+continue
+
+t = (maly_df.index - maly_df.index[0]).total_seconds().to_numpy()
+y = maly_df["IRL-2.1"].to_numpy()
+
+if not (np.isfinite(t).all() and np.isfinite(y).all()):
+print(name, "-> NaN/inf w t lub y")
+continue
+
+
+try:
+popt, pcov = curve_fit(exp_fit, t, y, p0=[y[0], 60], maxfev=10000)
+except Exception as e:
+print(name, "-> curve_fit error:", e)
+continue
+
+sigma_a, sigma_T = np.sqrt(np.diag(pcov))
+a_hat, T_hat = popt
+
+r  = rho_T(T_hat, L, B, b_i, lambda_i)
+dr = sigma_rho_T(sigma_T, L, B, b_i, lambda_i, T_hat)
+
+wyniki.append([name, T_hat, sigma_T, r, dr])
+
+ax.plot(t, y, marker='.', ls='None', ms=2, alpha=0.6, label=f"{name} data")
+ax.plot(t, exp_fit(t, *popt), lw=2, label=f"{name} fit")
+
+# format wykresu
+ax.set_yscale('log')
+ax.grid(True, which='both', alpha=0.3)
+ax.legend(ncol=2, fontsize=18)
+ax.set_xlabel("Czas od początku zrzutu s")
+ax.set_ylabel("IRL-2.1 Flux, cps")
+plt.show()
+
+# --- tabela wyników ---
+import pandas as pd
+tab = pd.DataFrame(wyniki, columns=["zrzut", "T_hat [s]", "sigma_T [s]", "rho", "delta_rho"])
+print(tab)
+
+tab["T ± ΔT"]   = [pm(T, dT, vfmt="{:.3f}", efmt="{:.3f}") for T, dT in zip(tab["T_hat [s]"], tab["sigma_T [s]"])]
+tab["ρ ± Δρ"]   = [pm(r, dr, vfmt="{:.6f}", efmt="{:.6f}") for r, dr in zip(tab["rho"], tab["delta_rho"])]
+print(tab[["zrzut", "T ± ΔT", "ρ ± Δρ"]])
+
+
+outdir = "/home/piegus/ncbj/Inzynierka/figures/"
+# Save plot
+plt.savefig(f"{outdir}/zrzuty.pgf", format='pgf', bbox_inches='tight')
+
+plt.show()
+
+\end{python}
+\subsection{Kod do wyznaczenia miejsc zerowych }
+\begin{python}
+
+from __future__ import annotations
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+from numpy.polynomial import Polynomial
+from ipywidgets import interact, Dropdown
+import ipywidgets as W
+import matplotlib.ticker as ticker
+from math import sqrt
+import matplotlib as mpl
+
+# 0b.  USTAWIENIA MATPLOTLIB
+mpl.rcParams.update({
+	'font.family': 'serif',
+	'font.serif': ['DejaVu Serif', 'Libertinus Serif', 'CMU Serif', 'Nimbus Roman'],
+	'mathtext.fontset': 'cm',     # ładny wygląd symboli i 10^n bez LaTeX
+	'axes.unicode_minus': False,   
+	
+	'font.size': 20,
+	'axes.labelsize': 20,
+	'legend.fontsize': 20,
+	'xtick.labelsize': 14,
+	'ytick.labelsize': 14,
+	
+	'figure.dpi': 140,
+	'savefig.dpi': 300,
+	'figure.constrained_layout.use': True,  #
+})
+
+
+beta_i   = np.array([2.43e-4, 1.363e-3, 1.203e-3,
+2.605e-3, 8.19e-4, 1.67e-4])
+lambda_i = np.array([1.27e-2, 3.17e-2, 1.15e-1,
+3.11e-1, 1.40,   3.87   ])
+
+beta          = beta_i.sum()         # 0.006552 (1 $)
+Lambda_prompt = 150e-6               # 150 µs
+t_analysis    = 0.0
+
+
+def rho_factory(rho_max: float):
+"""Zwraca rho(t) = rho_max [$] jako skok jednostkowy w chwili t=0."""
+def rho(t: float) -> float:
+return rho_max if t >= 0 else 0.0
+return rho
+
+rho_max_1 = 1.5
+rho_max_2 = 1.0
+rho_max_3 = 0.5
+rho_max_4 = 0.1
+rho_max_10 = 0.2
+rho1 = rho_factory(rho_max_1)
+rho2 = rho_factory(rho_max_2)
+rho3 = rho_factory(rho_max_3)
+
+
+def kinetics_matrix(t: float, rho_func) -> np.ndarray:
+r = rho_func(t)  # r w $, czyli ρ = r * β
+A = np.zeros((7, 7))
+A[0, 0]  = (r*beta - beta) / Lambda_prompt   # (ρ - β)/Λ (dla ρ w $)
+A[0, 1:] = lambda_i
+A[1:, 0] = beta_i / Lambda_prompt
+A[1:, 1:] = -np.diag(lambda_i)
+return A
+
+def I(n: int = 7) -> np.ndarray:
+return np.eye(n)
+
+def Matrix_alpha(t: float, alpha: float, rho_func) -> np.ndarray:
+return kinetics_matrix(t, rho_func) - alpha * I()
+
+def p_alpha(alpha, t, rho_func):
+"""Wielomian charakterystyczny p(α) = det(A - αI)."""
+alpha = np.atleast_1d(alpha)
+return np.array([np.linalg.det(Matrix_alpha(t, a, rho_func)) for a in alpha])
+\end{python}
+\subsection{Przebieg mocy reaktora w czasie}
+\begin{python}
+	import numpy as np
+	import matplotlib.pyplot as plt
+	import matplotlib.ticker as ticker
+	
+	t_step = 50  # chwila skoku ρ
+	
+
+	T_EXP_SLOPE = {0.5: 1.85, 1.0: 0.832, 1.5: 0.182}
+	
+	def plot_case_sum(
+	rho_val, t_range, color,
+	show_step=True,
+	show_dom_segment=True,
+	segment_rel_len=0.02,
+	t_mark_rel=None,            #
+	):
+	"""
+	n(t)/n0 po skoku ρ w t_step: pełna suma modów
+	"""
+
+	t_start, t_end = t_range
+	t = np.linspace(t_start, t_end, max(2, int((t_end - t_start)*400)))
+	
+
+	n0 = 1.0
+	C0 = beta_i / (Lambda_prompt * lambda_i) * n0
+	y0_state = np.concatenate(([n0], C0))
+	
+	rho_fun = RHO_FUN[rho_val] if 'RHO_FUN' in globals() else rho_factory(rho_val)
+	A_post = kinetics_matrix(0.0, rho_fun)
+	alpha_k, V = np.linalg.eig(A_post)
+	a_k = np.linalg.solve(V, y0_state)
+	N_k = a_k * V[0, :]   # wkłady neutronowe
+	
+	ak = np.real(alpha_k)
+	Nk = np.real(N_k)
+	
+
+	y = np.ones_like(t, dtype=float)
+	m = t >= t_step
+	if np.any(m):
+	tau = t[m] - t_step
+	exp_arg = np.outer(tau, ak)
+	exp_arg = np.clip(exp_arg, -700.0, 700.0)   # anty-over/underflow
+	n_full  = (Nk * np.exp(exp_arg)).sum(axis=1)
+	y[m] = np.clip(n_full, 1e-300, 1e300)
+	
+
+	y[y < 1.0] = np.nan
+	
+
+	fig, ax = plt.subplots(figsize=(12, 8))
+	ax.plot(t, y, color=color, lw=2, label=fr"$\rho = {rho_val:.2f}\ \$$")
+	
+	ax.set_yscale("log")
+	ax.yaxis.set_major_locator(ticker.LogLocator(base=10))
+	ax.yaxis.set_major_formatter(
+	ticker.FuncFormatter(lambda v, pos: ('1' if np.isclose(v, 1.0) else r'$10^{%d}$' % int(np.log10(v))) if (v > 0) else '')
+	)
+	ax.yaxis.set_minor_formatter(ticker.NullFormatter())
+	
+	y_pos = y[(y > 0) & np.isfinite(y)]
+	if y_pos.size >= 2:
+	ymax = min(float(y_pos.max())*1.05, 1e3)
+	top = 10**np.ceil(np.log10(ymax))
+	ax.set_ylim(0.85, min(1e3, top))
+	
+	else:
+	ax.set_ylim(0.01, 10.0)
+	
+	if show_step:
+	ax.axvline(t_step, color="0.3", ls="--", lw=1, label="skok ρ")
+	
+
+	mask_post = np.isfinite(y) & (y > 0) & (t >= t_step)
+	t_post = t[mask_post]; y_post = y[mask_post]
+	if t_post.size >= 5:
+	k_tail = max(5, int(np.ceil(0.20 * t_post.size)))
+	t_fit  = t_post[-k_tail:]; y_fit = y_post[-k_tail:]
+	slope, intercept = np.polyfit(t_fit, np.log(y_fit), 1)  # ln(y)=slope*t + intercept
+	
+	t_line = np.linspace(t_start, t_end, 400)
+	y_line = np.exp(intercept + slope * t_line)
+	ax.plot(t_line, y_line,
+	linestyle=(0, (9, 5)), color="black", lw=2.0, alpha=0.9, zorder=9,
+	label=" rozwiązanie asymptotyczne")
+	
+
+	y_line_pos = y_line[(y_line > 0) & np.isfinite(y_line)]
+	if y_line_pos.size:
+	y_all_max = max(float(np.nanmax(y_pos)) if y_pos.size else 1.0,
+	float(np.nanmax(y_line_pos)))
+	ax.set_ylim(0.85, min(1e3, y_all_max * 1.05))
+	
+
+	tx = t_step + (t_mark_rel if (t_mark_rel is not None) else 0.8*(t_end - t_start))
+	tx = np.clip(tx, t_start, t_end)
+	yx = np.exp(intercept + slope * tx)
+	
+	# kąt linii w pikselach (poprawny dla osi log)F
+	angle_offset_deg = -3 # możesz doprecyzować np. +2.0 / -1.5
+	dt_px = 10
+	trans = ax.transData
+	X, Y = trans.transform((tx, yx))
+	x2_data, _ = trans.inverted().transform((X + dt_px, Y))
+	y2_data = np.exp(intercept + slope * x2_data)
+	X2, Y2 = trans.transform((x2_data, y2_data))
+	angle = np.degrees(np.arctan2(Y2 - Y, X2 - X)) + angle_offset_deg
+	
+	ax.annotate(
+	r"$n(t)\ \propto\ e^{\dfrac{t}{T}}$",
+	xy=(tx, yx), xycoords='data',
+	xytext=(0, 14), textcoords='offset points',  # „nad” linią
+	rotation=angle, rotation_mode='anchor',
+	ha='left', va='bottom',
+	size=20,
+	zorder=10, clip_on=False
+	)
+	
+	ax.set_xlim(t_start, t_end)
+	ax.set_xlabel("Czas, s")
+	ax.set_ylabel(r"$n(t)/n_0$")
+	ax.grid(True, which="both", ls=":", alpha=0.7)
+	ax.legend(loc="lower right")
+	plt.tight_layout()
+	plt.show()
+	
+
+	plot_case_sum(0.5, (47.5, 53), "purple", t_mark_rel=T_EXP_SLOPE[0.5])
+	plot_case_sum(1.0, (48, 53),    "blue",  t_mark_rel=T_EXP_SLOPE[1.0])
+	plot_case_sum(1.5, (49.8, 50.6),"red",   t_mark_rel=T_EXP_SLOPE[1.5])
+	
+\end{python}
+

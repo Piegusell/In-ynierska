@@ -1,0 +1,103 @@
+
+
+\subsubsection{Cel}
+Celem procedury jest wyznaczenie kolejnych przemieszczeń preta regulacyjnego (w mm), które odpowiada kolejnych o zbliżonej wartości przyrostą reaktywności wyrażonej w dolarach 
+\subsubsection{Dane wejściowe i wielkości obliczane}
+Niech:
+\begin{itemize}
+	\item \(W_{\mathrm{tot}}\) --- całkowita integralna wartość pręta (tzw. \emph{waga pręta}) w~jednostkach \(\$\),
+	\item \(N\) --- liczba kroków pomiarowych,
+	\item \(H\) --- całkowity skok pręta (w~mm),
+	\item \(\Delta \rho_\$\) --- przyrost reaktywności na jeden krok (w~\(\$\)).
+\end{itemize}
+
+W arkuszu \(W_{\mathrm{tot}}\) jest wyznaczane jako średnia z~kilku powtórzeń pomiaru ( metodą zrzutu \ref{metoda_zrzutu,
+a następnie dzielone na \(N\), co definiuje krok reaktywności:
+\begin{equation}
+	\Delta \rho_\$ = \frac{W_{\mathrm{tot}}}{N}.
+	\label{eq:delta_rho_step}
+\end{equation}
+
+\subsubsection{Powiązanie okresu reaktora z~reaktywnością (równanie inhour)}
+Zależność pomiędzy okresem reaktora \(T\) a~reaktywnością wynika z~kinetyki punktowej z~uwzględnieniem
+neutronów opóźnionych i jest opisywana równaniem \emph{inhour}. Dla modelu \(m\)-grupowego:
+\begin{equation}
+	\rho(T) = \frac{\Lambda}{T} + \sum_{i=1}^{m}\frac{\beta_i}{1+\lambda_i T},
+	\label{eq:inhour_rho}
+\end{equation}
+gdzie \(\Lambda\) jest czasem generacji neutronów, \(\beta_i\) --- udziałem neutronów opóźnionych w~grupie \(i\),
+\(\lambda_i\) --- stałą rozpadu prekursorów w~grupie \(i\), a~\(\beta=\sum_{i=1}^{m}\beta_i\).
+Reaktywność w~jednostkach dolarowych:
+\begin{equation}
+	\rho_\$(T)=\frac{\rho(T)}{\beta}.
+	\label{eq:rho_dollar}
+\end{equation}
+
+
+
+
+\subsubsection{Zestawienie parametrów i znaczenie w arkuszu}
+\begin{table}[H]
+	\centering
+	\caption{Parametry i wielkości używane do wyznaczania kroków pomiarowych pręta.}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|p{6.5cm}|c|r|l|}
+		\hline
+		\textbf{Wielkość} & \textbf{Symbol} & \textbf{Wartość} & \textbf{Jednostka} \\
+		\hline
+		Całkowita integralna wartość pręta (średnia z powtórzeń) & \(W_{\mathrm{tot}}\) & \(\text{(z pomiaru)}\) & \(\$\) \\
+		\hline
+		Liczba kroków pomiarowych & \(N\) & \(\text{(zadana)}\) & -- \\
+		\hline
+		Skok całkowity pręta (założenie geometryczne w arkuszu) & \(H\) & 1100 & mm \\
+		\hline
+		Krok reaktywności (na 1 krok) & \(\Delta\rho_\$\) & \(W_{\mathrm{tot}}/N\) & \(\$\) \\
+		\hline
+		Okres reaktora (wartość docelowa/estymowana) & \(T\) & \(\text{(z inhour )}\) & s \\
+		\hline
+		Czas generacji neutronów (dla obliczeń inhour) & \(\Lambda\) & \(1.46\cdot 10^{-4}\) & s \\
+		\hline
+
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{Zrzuty ekranu arkusza Excel}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/Exel1.png}
+	\caption{Arkusz operatorski (\emph{front-end}): wprowadzanie wyników pomiaru wagi pręta, wyznaczenie \(W_{\mathrm{tot}}\),
+		\(\Delta\rho_\$\), szacowanego okresu \(T\) oraz tabeli kroków \((x_k,\Delta h_k)\); wykres charakterystyki pręta z zaznaczonymi krokami.}
+	\label{fig:excel_frontend}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/Exel2.png}
+	\caption{Arkusz obliczeniowy (\emph{back-end}): implementacja równania inhour \eqref{eq:inhour_dollar_excel} (model 6-grupowy),
+		tabela \(\beta_i\), \(\lambda_i\) oraz wartości \(\rho_\$(T)\) dla wybranych okresów; dopasowania potęgowe wykorzystywane w części operatorskiej.}
+	\label{fig:excel_backend}
+\end{figure}
+\label{subsubsec:excel_screeny}
+
+Na rys.~\ref{fig:excel_frontend} pokazano arkusz operatorski (warstwa \emph{front-end}), w którym użytkownik
+wprowadza wyniki pomiaru wagi pręta (w~\(\$\)) oraz liczbę kroków \(N\). Arkusz automatycznie wyznacza:
+\(\,W_{\mathrm{tot}}\) (średnia z powtórzeń), krok reaktywności \(\Delta\rho_\$=W_{\mathrm{tot}}/N\), szacowany okres \(T\)
+oraz tabelę przemieszczeń pręta: skumulowane zagłębienie \(x_k\) i~przyrost w kroku \(\Delta h_k\).
+Dodatkowo przedstawiona jest krzywa charakterystyki pręta wraz z naniesionymi punktami odpowiadającymi krokom.
+
+Na rys.~\ref{fig:excel_backend} przedstawiono arkusz obliczeniowy (warstwa \emph{back-end}).
+Zawiera on implementację równania \emph{inhour} w zapisie dolarowym:
+\begin{equation}
+	\rho_\$(T)=\frac{1}{T\,\beta}\left(\Lambda+\sum_{i=1}^{m}\frac{\beta_i}{\tfrac{1}{T}+\lambda_i}\right),
+	\label{eq:inhour_dollar_excel}
+\end{equation}
+Na podstawie wyników dopasowano aproksymacje używane  w arkuszu operatorskim to jest:
+\begin{align}
+	\rho_\$(T) &\approx a_\rho\,T^{b_\rho},\\
+	T(\Delta\rho_\$) &\approx a_T\,(\Delta\rho_\$)^{b_T},
+\end{align}
+co pozwala szybko oszacować oczekiwany okres \(T\) dla zadanego kroku \(\Delta\rho_\$\) 
+% Wymagane pakiety: \usepackage{graphicx} oraz (dla [H]) \usepackage{float}.
+
+
