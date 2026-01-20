@@ -1,0 +1,24 @@
+
+
+\begin{enumerate}
+	\item Na podstawie równań kinetyki punktowej wyprowadzono równanie odwrotnych godzin w zapisie dolarowym oraz pokazano, że po dostatecznie długim czasie odpowiedź reaktora przechodzi w stan asymptotyczny opisany funkcją wykładniczą $n(t)=n_0\exp(t/T)$, co umożliwia praktyczne wyznaczanie reaktywności z okresu reaktora.
+	
+	\item Opracowano narzędzia obliczeniowe w języku Python do analizy danych z systemu PRETY: dopasowania funkcji $y(t)=a\exp(t/T)$ metodą nieliniowych najmniejszych kwadratów, wyznaczania $\rho_{\$}(T)$ z równania odwrotnych godzin (model 6-grupowy) oraz propagacji niepewności w kolejnych krokach pomiarowych.
+	
+	\item Porównanie modelu jednogrupowego i sześciogrupowego równania odwrotnych godzin wykazało, że aproksymacja jedno grupowa jest konserwatywna (dla tej samej reaktywności daje krótszy okres reaktora), natomiast model sześciogrupowy jest dokładniejszy, ponieważ uwzględnia 6 grup neutronów opóźnionych, a nie jedną zbiorczą.
+	
+	\item Pomiary metodą okresu wykonane dla dwóch detektorów (IRL-2.1 oraz IRL-2.2) dały zgodne wartości okresu $T$ oraz odpowiadającej mu reaktywności $\rho_{\$}$ w kolejnych zrzutach, co potwierdza powtarzalność i spójność danych pomiarowych.
+	
+ 	\item Pierwszy krok pomiarowy (zrzut01) charakteryzował się wydłużonym okresem oraz zaniżoną wyznaczoną reaktywnością. Najbardziej prawdopodobne wyjaśnienie jest takie, że PK jest poniżej dna rdzenia reaktora, o czym może świadczyć rys. \ref{zrzut001}, gdzie bardzo dobrze można zauważyć zagłębienie na wykresie, które wskazuje na wprowadzenie ujemnej reaktywności do reaktora. Drugim czynnikiem, który mógł mieć wpływ, to po osiągnięciu dna reaktora pręt kontrolny nie zmienia już swojego położenia, natomiast linka może nadal się odkształcać sprężyście lub być dalej odwijana przez mechanizm, co może skutkować rozjazdem między wskazaniem układu pozycjonowania (PK) a rzeczywistym położeniem pręta. Taki błąd wprowadza stałe przesunięcie osi $z$ w skumulowanej charakterystyce $\rho_{\Sigma}(z)$, a w konsekwencji zafałszowanie reaktywności wyznaczonej dla tego kroku.
+	Należałoby zastosować pomiar naprężenia linki tensometrem co pozwoliłoby jednoznacznie wykryć moment osiągnięcia dna przez pręt.
+
+	\item  Ponieważ w pierwszym kroku pomiarowym mogło wystąpić stałe przesunięcie osi położenia wykonano również dopasowanie rozszerzone z parametrem przesunięcia $z_0$ (przyjęto $z_{\mathrm{rel}} = x - z_0$). Uwzględnienie $z_0$ prowadzi do jeszcze mniejszej wartości $H$ (rzędu $1007.5 \pm 19.2\,\mathrm{mm}$) oraz poprawy dopasowania ($R^2 \approx 0.999$). Wynik wymaga weryfikacji w kolejnych pomiarach.
+	
+	\item Przy porównaniu metody okresu, z metodą zrzutu można doszukać się pewnej nieściśliwości związanej z rozbieżnością wagi tego samego pręta w badaniach, co wymaga dalszych badań. 
+	
+
+	
+
+	
+	
+\end{enumerate}

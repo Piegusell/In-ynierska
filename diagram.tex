@@ -1,0 +1,156 @@
+W celu  łatwiejszego zobrazowania, posłużono się diagramem \ref{diagram}, który przedstawia przebieg i zależność treści występujących w pracy dyplomowej.
+
+
+
+
+
+
+\begin{diagram}[H]
+	\centering
+	\caption{przedstawiający przebieg pracy dyplomowej w sposób łatwy do przyswojenia.}
+	\label{diagram}
+
+
+	\begin{adjustbox}{max totalsize={\textwidth}{0.92\textheight},center}
+		\begin{tikzpicture}[
+			font=\small,
+			node distance=10mm and 18mm,
+			>=Latex,
+			block/.style={
+				draw, rounded corners=3mm, align=center,
+				minimum width=62mm, minimum height=16mm, inner sep=4mm
+			},
+			blockWide/.style={
+				draw, rounded corners=4mm, align=center,
+				minimum width=150mm, minimum height=18mm, inner sep=5mm
+			},
+			blockBig/.style={
+				draw, rounded corners=4mm, align=center,
+				minimum width=70mm, minimum height=26mm, inner sep=5mm
+			},
+			blockExel/.style={
+				draw, rounded corners=4mm, align=center,
+				minimum width=40mm, minimum height=26mm, inner sep=5mm
+			},
+			smallBlock/.style={
+				draw, rounded corners=3mm, align=center,
+				minimum width=62mm, minimum height=12mm, inner sep=3.5mm
+			}
+			]
+			
+			% ====== GÓRA ======
+			\node[blockWide] (cel) {%
+				\textbf{CEL:} Charakterystyka reaktywnościowa pręta pochłaniającego\\
+				-- wyznaczenie teoretycznie i porównanie z pomiarem.
+			};
+			
+			
+			
+			% ====== START: Dwie kolumny ======
+			\node[block, below=8mm of cel.south west, anchor=north west] (budowa) {%
+				Budowa reaktora\\
+				funkcja prętów pochłaniających
+			};
+			
+			\node[blockExel, below=8mm of cel.south east, anchor=north east] (kinetyka) {%
+				Równanie\\
+				kinetyki\\
+				punktowej
+			};
+			
+			% ====== LEWA GAŁĄŹ 
+			\node[block, below=9mm of budowa] (efektywnosc) {
+				Teoretyczna efektywność\\
+				pręta pochłaniającego\\
+				na podstawie\\
+				rozkładu strumienia neutronów
+			};
+			
+			\node[block, below=9mm of efektywnosc] (krzywaS) {%
+				Teoretyczna\\
+				krzywa „S”
+			};
+			\node[blockBig, below=16mm of krzywaS] (dofitowanie) {%
+				Dopasowanie\\
+				do punktów\\
+				pomiarowych\\
+				krzywej teoretycznej "S”
+			};
+			
+			\node[blockBig, below=10mm of dofitowanie] (koniec) {%
+				
+				\textbf{Koniec}
+			};
+			% ====== PRAWA GAŁĄŹ (metoda pomiaru) ======
+			\node[blockExel, below=9mm of kinetyka] (odwrotne) {%
+				Równanie\\
+				odwrotnych\\
+				godzin
+			};
+			
+			\node[blockExel, below=9mm of odwrotne] (metodaOkres) {%
+				Metoda\\
+				pomiaru reakt.\\
+				okresem
+			};
+			
+			
+			
+			% prawa kontynuacja
+			\node[blockExel, below=16mm of metodaOkres] (pomiary) {%
+				Pomiary:\\[-1mm]
+				
+				$\rightarrow$met. zrzutu\\
+				$\rightarrow$met. okresu\\
+				$\rightarrow$Excel\\
+				$\rightarrow$zebrane dane
+			};
+			
+			\node[blockBig, below=10mm of pomiary] (analizaPom) {%
+				Analiza pomiarów\\[1mm]
+				$\rightarrow$ położenia pręta w kolejnych krokach pomiarowych\\
+				$\rightarrow$ okres reaktora w kolejnych krokach pomiarowych\\
+				\hspace*{6mm}$\rightarrow$ reaktywność w kolejnych krokach pomiarowych
+			};
+			
+			\node[smallBlock, below=10mm of analizaPom] (punkty) {%
+				Punkty pomiarowe\\
+				do krzywej „S”
+			};
+			
+			% ====== STRZAŁKI (bez sprzężeń) ======
+			\begin{scope}[
+				->,
+				>=Latex,
+				line width=0.6pt,
+				draw=black!70
+				]
+				
+				% Rozgałęzienie od CEL do obu kolumn (ładne kąty proste)
+				\draw (cel.south) ++(0,-2mm) -| (budowa.north);
+				\draw (cel.south) ++(0,-2mm) -| (kinetyka.north);
+				
+				% Lewa kolumna
+				\draw (budowa) -- (efektywnosc);
+				\draw (efektywnosc) -- (krzywaS);
+				\draw (krzywaS) -- (dofitowanie);
+				\draw (dofitowanie) -- (koniec);
+				
+				% Prawa kolumna
+				\draw (kinetyka) -- (odwrotne);
+				\draw (odwrotne) -- (metodaOkres);
+				\draw (metodaOkres) -- (pomiary);
+				\draw (pomiary) -- (analizaPom);
+				\draw (analizaPom) -- (punkty);
+				\coordinate (kolano) at ($(dofitowanie.east)+(11mm,0)$);
+				\coordinate (kolano2) at ($(punkty.west)+(-21.8mm,0)$);
+				\draw[->, line width=0.6pt]
+				(punkty) -- (kolano2)-- (kolano) -- (dofitowanie.east);
+			\end{scope}
+			
+			
+		\end{tikzpicture}
+	\end{adjustbox}
+
+\end{diagram}
+

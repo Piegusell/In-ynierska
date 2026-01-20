@@ -1,0 +1,65 @@
+\subsection{Klasyfikacja problemu czasowego}
+Procesy zachodzące w reaktorze można podzielić na trzy grupy:
+\begin{itemize} 
+\item zjawiska długoterminowe trwające dni, lata (wypalenie paliwa, zatrucie bloków berylowych).
+\item zjawiska o średniej stałej czasowej które trwają minuty, godziny (zatrucie ksenonem, czy samarem).
+\item zjawiska bardzo szybkie, które zachodzą nawet w części sekundy (zrzucenie prętów kontrolnych, załączenie obiegu pierwotnego do chłodzenia reaktora, czy awarie z udziałem prętów pochłaniających, czy układu chłodzenia).
+\end{itemize}
+ Zakłada się, że reaktor pracuje jako punkt, stąd też nazwa kinetyka punktowa. Takie podejście to podstawa dla większości analiz systemów reaktorowych \cite{Lamarsh}. Równania kinetyki punktowej wyglądają następująco: 
+\begin{equation}
+	\frac{\mathrm{d}n(t)}{\mathrm{d}t}=\frac{\rho(t)-1)\beta}{\Lambda}n(t)+\sum_{i=1}^{j} \lambda_iC_i(t) 
+	\label{nodt}
+\end{equation}
+
+\begin{equation}
+	\frac{\mathrm{d}C_i(t)}{\mathrm{d}t}=\frac{\beta_i}{\Lambda}n(t)-\lambda_iC_i(t) 
+	\label{ciodt}
+\end{equation}
+
+\noindent gdzie:
+
+\noindent $n(t)$  jest zmieniającą się w czasie, $t$, gęstością neutronów,
+
+\noindent $\rho_{\$}(t)$  jest reaktywnością wprowadzaną do reaktora, podaną w jednostkach~,\$
+
+
+\noindent $\beta_i$  jest udziałem neutronów opóźnionych i fotoneutronów z $i$-tej grupy w całej puli neutronów, 
+
+\noindent $\beta$   jest udziałem wszystkich neutronów opóźnionych i fotoneutronów w całej puli neutronów, $\beta~=~\sum\limits_{i=1}^j \beta_i$,
+
+\noindent $\Lambda$  jest czasem życia jednej generacji neutronów,
+
+\noindent $\lambda_i$   jest stałą rozpadu prekursorów neutronów opóźnionych i fotoneutronów z $i$-tej grupy,
+
+\noindent $C_i(t)$ jest koncentracją prekursorów neutronów opóźnionych i fotoneutronów z $i$-tej grupy. 
+
+Równania te możemy zapisać w postaci macierzowej, jako: 
+
+
+\[
+\frac{d}{dt}\;
+\underbrace{\begin{bmatrix}
+		n(t)\\[2pt]
+		C_{1}(t)\\[2pt]
+		C_{2}(t)\\[2pt]
+		\vdots\\[2pt]
+		C_{j}(t)
+\end{bmatrix}}_{\vect f(t)}
+\;=\;
+\underbrace{\begin{bmatrix}
+		\dfrac{(\rho_s(t)-1)\,\beta}{\Lambda} & \lambda_1 & \lambda_2 & \cdots & \lambda_j\\[3mm]
+		\dfrac{\beta_1}{\Lambda} & -\lambda_1 & 0 & \cdots & 0\\
+		\dfrac{\beta_2}{\Lambda} & 0 & -\lambda_2 & \ddots & \vdots\\
+		\vdots & \vdots & \ddots & \ddots & 0\\
+		\dfrac{\beta_j}{\Lambda} & 0 & \cdots & 0 & -\lambda_j
+\end{bmatrix}}_{\mat M(t)}
+\;
+\underbrace{\begin{bmatrix}
+		n(t)\\[2pt]
+		C_{1}(t)\\[2pt]
+		C_{2}(t)\\[2pt]
+		\vdots\\[2pt]
+		C_{j}(t)
+\end{bmatrix}}_{\vect f(t)}\,.
+\]
+

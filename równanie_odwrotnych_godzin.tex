@@ -1,0 +1,90 @@
+W tym rozdziale, korzystając z modelu kinetyki punktowej przedstawionego wcześniej (rów.~\eqref{nodt}–\eqref{ciodt} oraz ujęcia macierzowego z macierzą $\mathbf{M}(t)$), wyprowadzimy zależność wiążącą reaktywność $\rho$ z okresem reaktora $T$.
+
+Okres reaktora $T$ definiuje się jako czas, w którym strumień (moc) neutronowa rośnie $e$-krotnie: $n(t)=n_0\,e^{t/T}$. 
+W praktyce często podaje się \emph{okres podwojenia} $T_2$, określony warunkiem $n(t)=2n_0$, przy czym
+\[
+T_2 = T\,\ln 2.
+\]
+
+\noindent\textbf{Równanie odwrotnych godzin} opisuje zależność reaktywności reaktora $\rho$ od jego okresu $T$. 
+Nazwa pochodzi od „odwrotnej godziny” (ang.\ \emph{inverse hour}, \emph{inhour}) — jednostki reaktywności odpowiadającej sytuacji, w której okres reaktora $T$ wynosi jedną godzinę:
+\begin{equation}
+	\rho_{in}=\frac{\Lambda + \sum\limits_{i=1}^j \sfrac{\beta_i}{\lambda_i}}{3600}\,\rho
+	\label{IN}
+\end{equation}
+
+\noindent gdzie:
+\begin{itemize}
+	\item $\rho$ — reaktywność reaktora,
+	\item $\beta_i$ — udział neutronów opóźnionych i fotoneutronów z $i$-tej grupy w całej puli neutronów,
+	\item $\Lambda$ — czas życia jednej generacji neutronów,
+	\item $\lambda_i$ — stała rozpadu prekursorów neutronów opóźnionych i fotoneutronów z $i$-tej grupy (w~s$^{-1}$).
+\end{itemize}
+
+Rozważamy reaktor pracujący do chwili $t=0$ w stanie krytycznym (stacjonarnym), a w chwili $t=0$ wprowadzamy skokowo stałą reaktywność $\rho_0$.
+Wobec tego w rozważanym przedziale czasowym przyjmujemy $\rho(t)\equiv \rho_0=\text{const}$, a parametry kinetyczne $(\beta_i,\lambda_i,\Lambda)$ są stałe (charakterystyczne dla danego reaktora).
+Odpowiada to szczególnemu przypadkowi macierzowego opisu z poprzedniego rozdziału, w którym:\begin{equation}
+	\frac{\mathrm{d}}{\mathrm{d}t} \left[\begin{array}{c}
+		n(t)\\
+		\uu{C_1(t)}\\
+		\uu{ C_2(t)}\\
+		\uu{\vdots}\\
+		\uu{C_j(t)}
+	\end{array}\right]= 
+	\underbrace{
+		\left[\begin{array}{ccccc}
+			\frac{\rho_0-\beta}{\Lambda}&\lambda_1&\lambda_2&\hdots&\lambda_j\\
+			\uu{\frac{\beta_1}{\Lambda}}&-\lambda_1&&\text{\huge0}&\\
+			\uu{\frac{\beta_2}{\Lambda}}&&-\lambda_2&&\\
+			\uu{\vdots}&\text{\huge0}&&\ddots&\\
+			\uu{\frac{\beta_j}{\Lambda}}&&&&\lambda_j
+		\end{array}\right]
+	}_{\ \Resize{0.5cm}{\mathbb{A}}}
+	\underbrace{
+		\left[\begin{array}{c}
+			n(t)\\
+			\uu{C_1(t)}\\
+			\uu{ C_2(t)}\\
+			\uu{\vdots}\\
+			\uu{C_j(t)}
+		\end{array}\right]
+	}_{\ \Resize{0.8cm}{\vec{f}(t)}}
+	\label{maciero}
+\end{equation}
+\noindent  Macierz $\mathbb{A}$ jest kwadratowa i jej wymiar to $(j+1)\times (j+1)$, gdzie $j$ jest liczbą grup neutronów opóźnionych i fotoneutronów. Macierz $\mathbb{A}$ jest także macierzą \textbf{stałą w czasie}.  Oznacza to, że równanie (\ref{maciero}) jest \textbf{jednorodnym} równaniem różniczkowym pierwszego rzędu, typu:
+
+
+\begin{equation}
+	\frac{\mathrm{d}\vec{f}(t)}{\mathrm{d}t}=\mathbb{A}\vec{f}(t)
+	\label{jedno}
+\end{equation}
+
+\noindent którego rozwiązaniem jest:
+
+\begin{equation}
+	\vec{f}(t)=\exp(\mathbb{A}t)\vec{f}(0)
+	\label{jednorozw}
+\end{equation}
+
+\noindent gdzie:
+
+\begin{equation}
+	\vec{f}(0)=\left[\begin{array}{c}
+		n(0)\\
+		\uu{C_1(0)}\\
+		\uu{ C_2(0)}\\
+		\uu{\vdots}\\
+		\uu{C_j(0)}
+	\end{array}\right]
+	=\left[\begin{array}{c}
+		\uu{n_0}\\
+		\uu{C_{1,0}}\\
+		\uu{ C_{2,0}}\\
+		\uu{\vdots}\\
+		\uu{C_{j,0}}
+	\end{array}\right]
+	\label{fzero}
+\end{equation}
+
+\noindent Metoda otrzymania rozwiązania ogólnego równania (\ref{maciero}) przeanalizowana zostanie poniżej w  (podrozdział \ref{inhour}).
+

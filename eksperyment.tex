@@ -1,0 +1,44 @@
+\subsection{Cel pomiaru i warunki pracy reaktora}
+
+Celem pomiaru było wyznaczenie eksperymentalnej charakterystyki efektywności pręta
+kompensacyjnego PK6, tj. zależności reaktywności wnoszonej do rdzenia $\rho$ (w zapisie
+dolarowym $\rho_{\text{\$}}
+$) od położenia pręta $z$, a następnie porównanie jej z krzywą teoretyczną
+o kształcie litery ``S'' wynikającą z przyjętego modelu rozkładu strumienia neutronów w rdzeniu.
+Pomiary wykonano w stanach ustalonych reaktora, przy pracy w zakresie mocy dobranym tak,
+aby nie wprowadzać istotnych błędów wynikających z efektów temperaturowych przy ograniczonym chłodzeniu. 
+\subsection{Metoda zrzutu \cite{OT-12}}\label{metoda_zrzutu}
+Przy pomocy metody zrzutu można przeprowadzić pomiar całkowitej reaktywności wnoszonej przez poszczególne pręty (PK, PB i PAR), ich części jak również przez grupy prętów. Opiera się ona na pomiarze zmiany strumienia neutronów w rdzeniu reaktora pod wpływem nagłego wprowadzenia ujemnej reaktywności (zrzut pręta pochłaniającego). Z przebiegu tych zmian można określić wielkość wprowadzonej reaktywności. Dokonuje się tego przy użyciu sprzętu komputerowego ze specjalistycznym oprogramowaniem. 
+\subsubsection{Przebieg pomiaru}
+Najważniejsze podpunkty przebiegu pomiaru: 
+\begin{itemize}
+	
+
+\item Osiągnąć moc rzędu $\mathbf{30\ \text{kW}-100\ \text{kW}}$
+, włączyć PAR na pracę automatyczną, ustabilizować reaktor. 
+\item nadkompensować pręty PK w taki sposób, aby pręty mierzone metodą zrzutu znajdowały się na żądanej wysokości.
+\item Ustawić komorę toru ILR-5 tak, aby częstość zliczeń tej linii nie przekraczała $\mathbf{5\times10^4\,\dfrac{imp}{sek}}$.
+\item Przełączyć w dolne położenie dźwignie przełączników odpowiadających zrzucanym prętom.
+\item Uruchomić program pomiarowy PRETY.
+\item Po ok. 1 min przełączyć PAR z pracy automatycznej na ręczną i na sygnał zaprogramowanych prętów).
+\item Pomiar kontynuować przez 5 do 6 min w celu zarejestrowania wpływu tego zrzutu na moc reaktora\cite{OT-12}.
+\end{itemize}
+\subsection{Metoda okresu \cite{OT-12}}\label{metoda_okresu}
+Pomiar efektywności prętów pochłaniających metodą okresu ustalonego polega na pomiarze okresu reaktora wywołanego wprowadzeniem dodatniej reaktywności poprzez stopniowe wyciąganie pręta pochłaniającego. Stosuje się ją dla stosunkowo małych reaktywności. Aby zapewnić możliwie dużą dokładność pomiarów należy przeprowadzić je na mocy ok. $\mathbf{30\ \text{kW}}$. Moc ta jest na tyle duża aby zminimalizować wpływ źródła fotoneutronów – zaś z drugiej strony na tyle mała, aby nie wprowadzać do pomiarów błędów wynikających z efektów temperaturowych przy ograniczonym chłodzeniu. Pomiar i rejestracja reaktywności oraz okresu reaktora realizowane są \textbf{,,on line''} za pomocą komputera PC i niezależnie przez Zespół Zmianowy – na podstawie pomiaru czasu podwojenia mocy T2x. Przyrost reaktywności w zależności od czasu podwojenia oblicza się na podstawie równania odwrotnych godzin.
+\subsubsection{Przebieg pomiaru}
+
+\begin{itemize}
+	\item Dokonać rozruchu reaktora zgodnie z procedurą wg Instrukcji nr \textbf{ZR-23-ZR-12}.
+	\item Osiągnąć moc rzędu $\mathbf{30\ \text{kW}-100\ \text{kW}}$, włączyć PAR na pracę automatyczną, ustabilizować reaktor.
+	\item Prekompensować pręty PK w taki sposób, aby mierzony pręt znajdował się w dolnym położeniu (informacja na ten temat powinna być zawarta w instrukcji jednorazowej).
+	\item Przełączyć PAR z pracy automatycznej na ręczną, zmienić nastawę na Nastawniku Mocy Reaktora NMR-5 o dekadę w górę.
+	\item Podnieść kalibrowany pręt o $\Delta h$ wg Instrukcji Jednorazowej.
+	\item Pomiar i rejestrację reaktywności oraz okresu reaktora prowadzić \textbf{,,on line''} za pomocą komputera i niezależnie przez Zespół Zmianowy – na podstawie pomiaru czasu podwojenia mocy T2x. Pomiar czasu podwojenia (w sytuacji ustalonego okresu) należy rozpocząć po upływie kilkudziesięciu sekund (ok. $80 \text{ sekund}$) od chwili wprowadzenia zaburzenia (wprowadzenie reaktywności przez skok pręta). Pomiar czasu podwojenia należy przeprowadzać trzykrotnie (\mathbb{$10 - 20, 20 - 40, 40 - 80\%$} wg wskazań 1TPP) a do obliczeń przyjmować wartość średnią. Wyniki pomiarów wpisać do protokołu z pomiarów (załącznik do instrukcji jednorazowej)\cite{OT-12}
+
+\end{itemize}
+\subsection{Excel - zaprojektowanie kroków pomiarowych}
+\input{content/exel}
+
+
+
+

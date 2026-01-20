@@ -1,0 +1,420 @@
+ Podanie ogólnego rozwiązania równania (\ref{maciero}), które opisane jest wzorem (\ref{jednorozw}) sprowadza się do obliczenia wyrażenia $\exp(\mathbb{A}t)$. Należy tu skorzystać z kilku własności algebry macierzy.
+
+\begin{enumerate}[label=\Roman*.]
+	\item Jeżeli macierz $\mathbb{B}$ jest diagonalna, to:
+	
+	\begin{equation}
+		\exp(\mathbb{B})=\exp
+		\left[\begin{array}{ccc}
+			\uu{b_{1,1}}&&\\
+			&\ddots&\text{\huge0}\\
+			\text{\huge0}&&\uu{b_{i,i}}
+		\end{array}\right]=
+		\left[\begin{array}{ccc}
+			\uu{\exp(b_{1,1})}&&\\
+			&\ddots&\text{\huge0}\\
+			\text{\huge0}&&\uu{\exp(b_{i,i})}
+		\end{array}\right]
+		\label{expM}
+	\end{equation}
+	
+	\item Jeżeli macierz jest diagonalna, to wartości na diagonali są również wartościami własnymi tej macierzy.
+	
+	\item Jeżeli macierz $\mathbb{A}$ jest niediagonalna, ale diagonalizowalna, to można ją zdiagonalizować i otrzymać diagonalną macierz $\mathbb{B}$:
+	
+	\begin{equation}
+		\mathbb{B} = \mathbb{S}^{-1}\mathbb{A} \ \mathbb{S}
+		\label{MN}
+	\end{equation}
+	
+	gdzie macierz $\mathbb{S}$ jest macierzą zmiany bazy.
+	
+	Diagonalizacja macierzy odbywa się poprzez odpowiednie obracanie lub/i skalowanie jej elementów. W przypadku rozwiązywania układu równań należy unikać skalowania, ponieważ zmieniłoby ono sens początkowych równań. Metodą na zdiagonalizowanie macierzy jedynie za pomocą obrotów jest \textbf{diagonalizacja metodą Jordana}. Dowód na to, że rozważana macierz $\mathbb{A}$ jest diagonalizowalna zostanie przedstawiony w rozdziale \ref{jednogrupowy} i \ref{wielogrupowe}.
+	
+	\item Jeżeli $\mathbb{A} = \mathbb{S}\mathbb{B} \mathbb{S}^{-1}$, to:
+	
+	\begin{equation}
+		\mathbb{A}^n = 
+		\underbrace{
+			\mathbb{S}\mathbb{B}\cancel{\mathbb{S}}^{-1}\cdot\cancel{\mathbb{S}}\mathbb{B}\cancel{\mathbb{S}}^{-1}\cdot\cdot\cdot \cancel{\mathbb{S}}\mathbb{B}\mathbb{S}^{-1}
+		}_{n \ \mathrm{razy}}
+		= \mathbb{S}\mathbb{B}^n\mathbb{S}^{-1}
+		\label{NN}
+	\end{equation}
+	
+	\item Ponieważ funkcję $exp$ można rozwinąć w szereg Taylora, czyli w szereg wielomianowy: $\exp(x)=\sum\limits_{n=1}^{\infty}\frac{x^n}{n!}$, to korzystając z własności (\ref{NN}) otrzymujemy:
+	
+	\begin{equation}
+		\exp(\mathbb{A}t)=
+		\sum\limits_{n=1}^{\infty}\frac{(\mathbb{A}t)^n}{n!}=
+		\sum\limits_{n=1}^{\infty}\frac{\mathbb{S}(\mathbb{B}t)^n\mathbb{S}^{-1}}{n!}=
+		\mathbb{S}\left(\sum\limits_{n=1}^{\infty}\frac{(\mathbb{B}t)^n}{n!}\right)\mathbb{S}^{-1}=
+		\mathbb{S} \exp(\mathbb{B}t)\mathbb{S}^{-1}
+		\label{wielo}
+	\end{equation}
+	
+\end{enumerate}
+
+\noindent Korzystając z wymienionych powyżej własności I--V, układ równań (\ref{maciero}) można rozwiązać w~następujący sposób:
+
+\begin{enumerate}
+	
+	\item Zapisać układ równań kinetyki w postaci macierzowej. Upewnić się, że macierz współczynników (macierz $\mathbb{A}$) jest niezależna od czasu.
+	
+	\item Zdiagonalizować macierz współczynników (macierz $\mathbb{A}$) metodą Jordana i otrzymać diagonalną macierz $\mathbb{B}$.
+	
+	\item Otrzymać rozwiązanie ogólne układu równań, którym będzie:
+\end{enumerate}
+	\begin{equation}
+		\vec{f}(t)=\mathbb{S}\exp(\mathbb{B}t)\mathbb{S}^{-1}\vec{f}(0)
+		\label{rozwogolne}
+	\end{equation}
+	\textbf{Jeżeli macierz jest kwadratowa o wymiarze $n\times n$ i posiada $n$ różnych wartości własnych, to jest diagonalizowalna.}
+	Poniżej wykażemy, że analizowana macierz kwadratowa $\mathbb{A}$ o wymiarze \mbox{$(j+1)\times (j+1)$} spełnia powyższy warunek.
+	
+	Dla uproszczenia zapisu rozważaną macierz $\mathbb{A}$ przedstawimy za pomocą elementów macierzy oznaczonych małymi literkami $a$ z odpowiednimi indeksami w następujący sposób:
+	\begin{equation}
+		\mathbb{A}= 
+		\left[\begin{array}{ccccc}
+			\frac{\rho_0-\beta}{\Lambda}&\lambda_1&\lambda_2&\hdots&\lambda_j\\
+			\uu{\frac{\beta_1}{\Lambda}}&-\lambda_1&&\text{\huge0}&\\
+			\uu{\frac{\beta_2}{\Lambda}}&&-\lambda_2&&\\
+			\uu{\vdots}&\text{\huge0}&&\ddots&\\
+			\uu{\frac{\beta_j}{\Lambda}}&&&&-\lambda_j
+		\end{array}\right]
+		=
+		\left[\begin{array}{ccccc}
+			\uu{a_{1,1}}&a_{1,2}&a_{1,3}&\hdots&a_{1,j+1}\\
+			\uu{a_{2,1}}&a_{2,2}&&\text{\huge0}&\\
+			\uu{a_{3,1}}&&a_{3,3}&&\\
+			\uu{\vdots}&\text{\huge0}&&\ddots&\\
+			\uu{a_{j+1,1}}&&&&a_{j+1,j+1}
+		\end{array}\right]
+		\label{macierouuu}
+	\end{equation}
+	
+	%\noindent Ze względu na kształt macierzy $\mathbb{A}$, wiadomo, że poszczególne wartości $\lambda_i$ będą różne, ponieważ reprezentują stałe rozpadu, charakteryzujące różne grupy neutronów opóźnionych i fotoneutronów. Różna od nich będzie także wartość $\frac{\rho_0-\beta}{\Lambda}$. Oznacza to, że macierz $\mathbb{A}$ będzie posiadała $j+1$ różnych od siebie, wyrazów $a_{i,i}$ na diagonali.
+	%\noindent Poniżej dowiedziemy, że macierz  $\mathbb{A}$ posiada $(j+1)$ różnych wartości własnych. 
+	
+	\noindent Jeżeli wektor $\vec{v}_k$ jest \textbf{wektorem własnym} macierzy $\mathbb{A}$, to zgodnie z jego definicją jest \textbf{niezerowy} i spełnia następujące równanie: 
+	
+	\begin{equation}
+		\mathbb{A}\cdot \vec{v}_k = \alpha_k \cdot \vec{v}_k 
+		\label{czczczczcz}
+	\end{equation}
+	
+	\noindent gdzie $\alpha_k$ jest wartością własną, stowarzyszoną z tym wektorem własnym.
+	
+	Jeżeli zdefiniujemy macierz $\mathbb{M}(\alpha_k)$, jako:
+	
+	\begin{equation}
+		\mathbb{M}(\alpha_k)= 
+		\mathbb{A}-\alpha_k\cdot \mathbb{1}
+		\label{yuyuyuyuyuy}
+	\end{equation}
+	
+	\noindent gdzie macierz $\mathbb{1}$ jest macierzą jednostkową, to:
+	
+	\begin{equation}
+		\mathbb{M}(\alpha_k)\cdot \vec{v}_k= 0
+		\label{brbrbrbrb}
+	\end{equation}
+	
+	\noindent ponieważ:
+	
+	\begin{equation}
+		(\mathbb{A}-\alpha_k\cdot \mathbb{1})\cdot \vec{v}_k=\mathbb{A}\cdot \vec{v}_k -\alpha_k \cdot \vec{v}_k =  0
+		\label{ioioioioi}
+	\end{equation}
+	
+	\noindent Gdyby macierz $\mathbb{M}$ była macierzą odwracalną, to istniałaby macierz do niej odwrotna, czyli $\mathbb{M}^{-1}$. Wtedy, mnożąc równanie  (\ref{brbrbrbrb}) obustronnie przez macierz $\mathbb{M}^{-1}$ otrzymalibyśmy:
+	
+	\begin{equation}
+		\underbrace{
+			\mathbb{M}^{-1}\cdot \mathbb{M}
+		}_{\ \Resize{0.25cm}{\mathbb{1}}}
+		\cdot \vec{v}_k =
+		\underbrace{
+			\mathbb{M}^{-1} \cdot 0
+		}_{\ \Resize{0.2cm}{0}}
+		\label{udtwwjdu}
+	\end{equation}
+	
+	\noindent a powyższe równanie (\ref{udtwwjdu}) byłoby spełnione jedynie wtedy, gdyby wektor $\vec{v}_k$ był zerowy, czyli $\vec{v}_k =0$. A to jest sprzeczne z definicją wektora własnego, który musi być niezerowy. Oznacza to, że macierz $\mathbb{M}$ \textbf{nie jest macierzą odwracalną}. A \textbf{wyznacznik każdej macierzy nieodwracalnej jest równy zero}. Tak więc:
+	
+	\begin{equation}
+		\det \mathbb{M}(\alpha_k)=
+		\det
+		(\mathbb{A}-\alpha_k \cdot \mathbb{1}) 
+		= 0
+		\label{ertyerty}
+	\end{equation}
+	
+	\noindent Wobec powyższego wartości własne macierzy $\mathbb{A}$, oznaczone jako $\alpha_k$, spełniają równanie (\ref{ertyerty}).
+	
+	
+	Definiujemy macierz $\mathbb{M}(\alpha)$, jako funkcję ciągłego parametru $\alpha$:
+	
+	\begin{equation}
+		\mathbb{M}(\alpha)= 
+		\mathbb{A}-\alpha\cdot \mathbb{1}
+		=
+		\left[\begin{array}{ccccc}
+			\uu{a_{1,1}-\alpha}&a_{1,2}&a_{1,3}&\hdots&a_{1,j+1}\\
+			\uu{a_{2,1}}&a_{2,2}-\alpha&&\text{\huge0}&\\
+			\uu{a_{3,1}}&&a_{3,3}-\alpha&&\\
+			\uu{\vdots}&\text{\huge0}&&\ddots&\\
+			\uu{a_{j+1,1}}&&&&a_{j+1,j+1}-\alpha
+		\end{array}\right]
+		\label{mmmmmmmmm}
+	\end{equation}
+	Wyznacznik tej macierzy, $\det(\mathbb{M}(\alpha))$, będzie funkcją wielomianową parametru $\alpha$. Zgodnie z~równaniem (\ref{ertyerty}), wartości własne $\alpha_k$ będą miejscami zerowymi (pierwiastkami) tego wielomianu, czyli:
+	
+	\begin{equation}
+		\det
+		(\mathbb{M}(\alpha_k)) 
+		= 0
+		\label{wewewewewewe}
+	\end{equation}
+	
+	\subsection{Przypadek jednogrupowy, $j=1$} \label{jednogrupowy}
+	
+	W przypadku jednej grupy neutronów ($j=1$) wzór (\ref{wewewewewewe}) przybierze postać:
+	\begin{equation}
+		\det(\mathbb{M}(\alpha)) =
+		\left|\begin{array}{cc}
+			\frac{\rho_0-\beta}{\Lambda} - \alpha&\lambda_1\\
+			\uu{\frac{\beta}{\Lambda}}&-\lambda_1 - \alpha
+		\end{array}\right|
+		= (\frac{\rho_0-\beta}{\Lambda} - \alpha)(-\lambda_1 - \alpha) - \frac{\beta}{\Lambda}\lambda_1
+		\label{babel}
+	\end{equation}
+	
+	\noindent Podstawiając równanie (\ref{babel}) do równania (\ref{wewewewewewe}) i rozwiązując je (czyli znajdując jego miejsca zerowe), otrzymamy dwie różne wartości własne: 
+	
+	\begin{equation}
+		\alpha_{\pm}=-\frac{\Lambda\lambda-\rho_0+\beta}{2\Lambda}\pm\frac{\sqrt{\Lambda^2\lambda^2+2\Lambda\lambda(\rho_0+\beta)+\rho_0^2+\beta^2-2\rho_0\beta}}{2\Lambda}
+		\label{apm}
+	\end{equation}
+	
+	\noindent Ponieważ w tym przypadku (jednogrupowym) macierz $\mathbb{A}$ o wymiarze $2\times 2$ posiada dwie różne wartości własne, co oznacza, że \textbf{jest macierzą diagonalizowalną}.
+	
+	W przypadku jednogrupowym, który jest stosunkowo prosty do przeprowadzenia dokładnego, analitycznego rozwiązania, macierz diagonalna $\mathbb{B}$ będzie równa:
+	
+	\begin{equation}
+		\mathbb{B}=\left[\begin{array}{cc}
+			\alpha_+&0\\
+			\uu{0}&\alpha_-
+		\end{array}\right]
+		\label{bee}
+	\end{equation}
+	
+	\noindent Następnie należy znaleźć macierz obrotu $\mathbb{S}$. Będzie złożona z wektorów własnych $\vec{\mathfrak{s}}$ macierzy $\mathbb{A}$, spełniających równanie:
+	
+	\begin{equation}
+		\mathbb{A}\vec{\mathfrak{s}}_{\pm}=\alpha_{\pm}\vec{\mathfrak{s}}_{\pm}
+		\label{vecss}
+	\end{equation}
+	
+	\noindent Wtedy macierz obrotu S będzie równa:
+	
+	\begin{equation}
+		\mathbb{S}=[\vec{\mathfrak{s}}_+,\vec{\mathfrak{s}}_-]=
+		\left[\begin{array}{cc}
+			\frac{\Lambda}{\beta}(\lambda+\alpha_+)&\frac{\Lambda}{\beta}(\lambda+\alpha_-)\\
+			\uu{1}&1
+		\end{array}\right]=
+		\left[\begin{array}{cc}
+			x_+&x_-\\
+			\uu{1}&1
+		\end{array}\right]
+		\label{svec}
+	\end{equation}
+	
+	\noindent gdzie dla uproszczenia zapisu przyjęto, że:
+	
+	\begin{equation}
+		x_{\pm}=\frac{\Lambda}{\beta}(\lambda+\alpha_{\pm})
+		\label{ixsde}
+	\end{equation}
+	
+	\noindent W kolejnym kroku należy obliczyć macierz odwrotną $\mathbb{S}^{-1}$. W tym przypadku będzie ona równa:
+	
+	\begin{equation}
+		\mathbb{S}^{-1}=\frac{1}{\det[\mathbb{S}]}
+		\left[\begin{array}{cc}
+			\uu{1}&-\frac{\Lambda}{\beta}(\lambda+\alpha_-)\\
+			\uu{-1}&\frac{\Lambda}{\beta}(\lambda+\alpha_+)
+		\end{array}\right]=\frac{1}{x_+-x_-}
+		\left[\begin{array}{cc}
+			\uu{1}&-x_-\\
+			\uu{-1}&x_+
+		\end{array}\right]
+		\label{s-1}
+	\end{equation}
+	
+	\noindent Zgodnie z (\ref{expM}) otrzymujemy, że:
+	
+	\begin{equation}
+		\exp(\mathbb{B}t)=
+		\left[\begin{array}{cc}
+			\exp(\alpha_+t)&0\\
+			\uu{0}&exp(\alpha_-t)
+		\end{array}\right]=
+		\left[\begin{array}{cc}
+			\mathfrak{e}_+&0\\
+			\uu{0}&\mathfrak{e}_-
+		\end{array}\right]
+		\label{expBe}
+	\end{equation}
+	
+	\noindent gdzie dla uproszczenia zapisu przyjęto, że:
+	
+	\begin{equation}
+		\mathfrak{e}_{\pm}=\exp(\alpha_{\pm}t)
+		\label{eee}
+	\end{equation}
+	
+	\noindent Aby otrzymać rozwiązanie ogólne rozważanego jednogrupowego przypadku, należy skorzystać ze wzoru (\ref{rozwogolne}):
+	
+	\begin{equation}
+		\begin{aligned}
+			\left[\begin{array}{c}
+				n(t)\\
+				\uu{C(t)}
+			\end{array}\right]=&\frac{1}{x_+-x_-}
+			\left[\begin{array}{cc}
+				x_+&x_-\\
+				\uu{1}&1
+			\end{array}\right]
+			\left[\begin{array}{cc}
+				\mathfrak{e}_+&0\\
+				\uu{0}&\mathfrak{e}_-
+			\end{array}\right]
+			\left[\begin{array}{cc}
+				1&-x_-\\
+				\uu{-1}&x_+
+			\end{array}\right]
+			\left[\begin{array}{c}
+				n_0\\
+				\uu{C_0}
+			\end{array}\right]=\\
+			&\\
+			&=\frac{1}{x_+-x_-}
+			\left[\begin{array}{cc}
+				x_+\mathfrak{e}_+-x_-\mathfrak{e}_-&x_+x_-(\mathfrak{e}_--\mathfrak{e}_+)\\
+				\uu{\mathfrak{e}_+-\mathfrak{e}_-}&x_+\mathfrak{e}_--x_-\mathfrak{e}_+
+			\end{array}\right]
+			\left[\begin{array}{c}
+				n_0\\
+				\uu{C_0}
+			\end{array}\right]
+			\label{jednorozwog}
+		\end{aligned}
+	\end{equation}
+	
+	\noindent Jak widać z (\ref{jednorozwog})rozwiązanie ogólne prostego, jednogrupowego przypadku jest skomplikowane. Ale obserwując jego kształt, można zauważyć, że w tym przypadku, gdy mamy dwa równania kinetyki (tzn. wymiar macierzy $\mathbb{A}$ równy jest 2), to w rozwiązaniach ogólnych wystąpią wyrażenia liniowe dwóch różnych eksponentów. Wykorzystując fakt, że zarówno iloczyn, jak i iloraz eksponentów również jest eksponentem, liniowe wyrażenia eksponentów można przekształcić do odpowiedniej sumy eksponentów o odpowiednich wykładnikach. To oznacza, że wzór (\ref{jednorozwog})można uprościć do postaci:
+	
+	\begin{equation}
+		n(t)=N_+e^{\alpha_+t}+N_-e^{\alpha_-t}
+		\label{n_suma_exp}
+	\end{equation}
+	
+	\begin{equation}
+		C(t)=C_{+}e^{\alpha_+t}+C_{-}e^{\alpha_-t}
+		\label{C_suma_exp}
+	\end{equation}
+	
+	\noindent gdzie:
+	
+	\begin{equation}
+		N_{\pm}=\pm \frac{n_0x_{\pm}-C_0x_+x_-}{x_+-x_-}
+		\label{nenenenenenenenne}
+	\end{equation}
+	
+	\noindent oraz 
+	
+	\begin{equation}
+		C_{\pm}=\pm \frac{n_0-C_0x_{\mp}}{x_+-x_-}
+		\label{yuertueyt}
+	\end{equation}
+\newpage
+\subsection{Rozwiązanie wielogrupowe, $j=6$}\label{wielogrupowe}
+W sytuacji kiedy chcemy rozdzielić neutrony opóźnione na sześć różnych grup, musimy  rozwiązać  układ kinetyki składający się aż z  siedmiu równań, które przy rozwiązywaniu analitycznym obarcza nas niepotrzebnym chaosem. 
+Dlatego też dla przypadku sześciogrupowego  $\mathbb{M}$ skorzystamy z obliczeń numerycznych, w którym niepodzielnie rządzi porządek i precyzja. 
+
+
+Podział grupowy neutronów opóźnionych wraz ze stałymi zaniku ich prekursorów oraz odpowiadającymi im czasami połowicznego zaniku i udziałami poszczególnych grup w~bilansie neutronów reaktora MARIA \cite{kubowski}, przedstawiono w~Tabeli~\ref{tab2}. Wartości te zostały użyte do obliczenia wyznacznika macierzy $\mathbb{M}$. Na Rys. \ref{iretwor} przedstawiono obliczony numerycznie wyznacznik macierzy $\mathbb{M}$, jako funkcję parametru $\alpha$ dla trzech wartości wprowadzonej do rdzenia reaktywności, wynoszących, odpowiednio, 0,5 \$, 1 \$ oraz 1,5 \$. Miejsca zerowe oznaczono punktami, a ich wartości przedstawiono w Tabeli \ref{tab1}. Jako czas życia jednej generacji neutronów, przyjęto $\Lambda = 146 \ \mu \mathrm{s}$.
+
+ 
+\begin{table}[H]
+	\centering
+	\caption{Udziały, stałe zaniku oraz czasy połowicznego zaniku prekursorów neutronów opóźnionych \cite{kubowski}.}
+	\label{tab2}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		Przypadek & Nr grupy $i$ & $\beta_i$ & $\lambda_i$, $\mathrm{s^{-1}}$ & $T_{1/2}$, s \\
+		\hline
+		\multirow{6}{*}{Wielogrupowy}
+		& 1 & $2{,}43 \cdot 10^{-4}$ & $1{,}27 \cdot 10^{-2}$ & 54{,}6 \\
+		& 2 & $1{,}363 \cdot 10^{-3}$ & $3{,}17 \cdot 10^{-2}$ & 21{,}9 \\
+		& 3 & $1{,}203 \cdot 10^{-3}$ & $1{,}15 \cdot 10^{-1}$ & 6{,}03 \\
+		& 4 & $2{,}605 \cdot 10^{-3}$ & $3{,}11 \cdot 10^{-1}$ & 2{,}20 \\
+		& 5 & $8{,}19 \cdot 10^{-4}$ & $1{,}40$ & 0{,}50 \\
+		& 6 & $1{,}67 \cdot 10^{-4}$ & $3{,}87$ & 0{,}18 \\
+		\hline
+		Jednogrupowy
+		& \multicolumn{2}{c|}{$\beta = \sum\limits_{i=1}^{6} \beta_i = 6{,}4 \cdot 10^{-3}$}
+		& \multicolumn{2}{c|}{$\hat{\lambda} = 0{,}44~\mathrm{s^{-1}}$} \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+	\centering
+	\caption{Miejsca zerowe wyznacznika $\det\mathbb{M}(\alpha_i)$ dla wybranych wartości wprowadzonej reaktywności.}
+	\label{tab1}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multirow{2}{*}{$\alpha_i$} &
+		\multicolumn{3}{c|}{Reaktywność $\rho$} \\ \cline{2-4}
+		& $\rho = 0{,}5~\$$ & $\rho = 1{,}0~\$$ & $\rho = 1{,}5~\$$ \\
+	\hline
+	$\alpha_1$ & 0,180  & 3,729  & 22,707 \\
+	$\alpha_2$ & -0,013 & -0,013 & -0,013 \\
+	$\alpha_3$ & -0,047 & -0,039 & -0,037 \\
+	$\alpha_4$ & -0,161 & -0,140 & -0,132 \\
+	$\alpha_5$ & -1,113 & -0,756 & -0,500 \\
+	$\alpha_6$ & -3,683 & -2,936 & -1,770 \\
+	$\alpha_7$ & -22,820& -5,634 & -4,078 \\
+	\hline
+	
+	\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 16cm]{figures/M(alfa)_rho_all.png}
+	\caption{Obliczona wartość wyznacznika macierzy $\mathbb{M}$, jako funkcja parametru $\alpha$ dla trzech wartości wprowadzonej do rdzenia reaktywności, wynoszących, odpowiednio, 0,5 \$, 1 \$ oraz 1,5 \$. Miejsca zerowe wyznacznika zaznaczono na rysunku za pomocą punktów. Poszczególne kolory odpowiadają wartościom wprowadzonej reaktywności w \$.}\label{iretwor}
+\end{figure}
+
+Jak widać wyznacznik macierzy $\mathbb{M}$ dla przypadku sześciogrupowego posiada siedem różnych miejsc zerowych, będących jednocześnie siedmioma różnymi wartościami własnymi macierzy $\mathbb{A}$, więc macierz $\mathbb{A}$ \textbf{jest macierzą diagonalizowalną}. I analogicznie do przypadku jednogrupowego, rozwiązania równań kinetyki punktowej (\ref{maciero})będą liniowymi kombinacjami siedmiu eksponentów, które można przekształcić do postaci sumy siedmiu eksponentów z odpowiednimi współczynnikami:
+
+\begin{equation}
+	n(t)=\sum_{k=1}^7 N_ke^{\alpha_kt}
+	\label{werty}
+\end{equation}
+
+\begin{equation}
+	C_i(t)=\sum_{k=1}^7 C_{k,i}e^{\alpha_kt}
+	\label{dfghj}
+\end{equation}
+
+\noindent ze względu na skomplikowaną postać rozwiązań równań kinetyki punktowej w przypadku sześciu grup neutronów opóźnionych analityczne postaci współczynników $N_k$ oraz $C_{k,i}$ nie zostaną podane. 
+
+Warto także podkreślić, że wśród otrzymanych wartości własnych, zawsze tylko jedna wartość własna jest dodatnia, a pozostałe są ujemne. Oznacza to, że dla przypadku każdej z trzech zastosowanych reaktywności tylko eksponent z dodatnią wartością własną będzie "wybuchać" w nieskończoności, natomiast wszystkie pozostałe (z wartościami ujemnymi) zanikną.
+	

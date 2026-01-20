@@ -1,0 +1,44 @@
+W tym podrozdziale został przedstawiony przykładowy wykres na rys. \ref{fig:IRL22_zrzut11} gdzie został  umieszczony sygnał z odczytanych danych pomiarowych komór rozszczepieniowych IRL w funkcji strumienia neutronów w czasie. Następnie do każdego z wykresów została dopasowana krzywa:
+\begin{equation}
+	y(t) = a\,\exp\!\left(\frac{t}{T}\right)
+	\label{eq:exp_fit}
+\end{equation}
+gdzie:
+\begin{itemize}
+ \item$a$ jest współczynnikiem skali,
+ \item $T$ jest okresem reaktora.
+\end{itemize}
+Dopasowanie parametrów $a$ i $T$ wykonano metodą najmniejszych kwadratów w programie napisanym w Pythonie.  Niepewności $\Delta a$ oraz $\Delta T$ wyznaczono jako błędy standardowe ($1\sigma$) z macierzy kowariancji dopasowania.  Wszystkie wartości okresu reaktora, zostały umieszczone w podrozdziale \ref{tabele pomiarowe}, natomiast wartości $a$ i niepewności zostaną przedstawione w tabeli \ref{tab5} 
+\begin{table}[H]
+	\centering
+	\caption{Parametr skali $a$ (z niepewnością $\sigma_a$) dla kanałów IRL-2.1 i IRL-2.2}
+	\renewcommand{\arraystretch}{1.2}
+	\label{tab5}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\textbf{zrzut} & \textbf{IRL-2.1: $a \pm \sigma_a$} & \textbf{IRL-2.2: $a \pm \sigma_a$} \\
+		\hline
+		zrzut01 & $3,6047(7)\times 10^{6}$ & $1,7463(5)\times 10^{4}$ \\
+		zrzut02 & $3,707(3)\times 10^{6}$  & $1,8360(17)\times 10^{4}$ \\
+		zrzut03 & $3,930(3)\times 10^{6}$  & $2,010(19)\times 10^{4}$ \\
+		zrzut04 & $3,330(3)\times 10^{6}$  & $1,744(19)\times 10^{4}$ \\
+		zrzut05 & $3,391(4)\times 10^{6}$  & $1,838(26)\times 10^{4}$ \\
+		zrzut06 & $3,584(3)\times 10^{6}$  & $1,989(20)\times 10^{4}$ \\
+		zrzut07 & $3,403(3)\times 10^{6}$  & $1,952(21)\times 10^{4}$ \\
+		zrzut08 & $3,343(3)\times 10^{6}$  & $1,965(17)\times 10^{4}$ \\
+		zrzut09 & $3,611(3)\times 10^{6}$  & $2,176(18)\times 10^{4}$ \\
+		zrzut10 & $3,307(3)\times 10^{6}$  & $2,047(24)\times 10^{4}$ \\
+		zrzut11 & $4,146(2)\times 10^{6}$  & $2,638(21)\times 10^{4}$ \\
+		\hline
+		
+	\end{tabular}
+\end{table}
+Kanał IRL-2.1 rejestrował istotnie większe wartości parametru skali $a$ niż IRL-2.2, ponieważ detektor IRL-2.1 był zawieszony bliżej środka rdzenia reaktora. Mniejsza odległość od źródła (oraz mniejsze osłabienie w materiale pomiędzy rdzeniem a detektorem) skutkuje większym strumieniem neutronów w punkcie pomiarowym, a w konsekwencji większą częstością zliczeń.
+
+\begin{figure}[H]
+	\centering
+	\resizebox{\textwidth}{!}{\input{figures/zrzut11_IRL2.pgf}}
+	\caption{Przebieg strumienia neutronów zarejestrowany przez detektor IRL-2.2
+		dla zrzutu 11 wraz z dopasowaniem krzywej.}
+	\label{fig:IRL22_zrzut11}
+\end{figure}

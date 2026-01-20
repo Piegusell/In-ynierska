@@ -1,0 +1,103 @@
+Do wyznaczenia zależności efektywności pręta kompensacyjnego od stopniowego zanurzenia  skorzystano w niniejszej pracy z raportu \cite{ILR}. Na wykresie \ref{strumień} przedstawiono względny osiowy rozkład strumienia neutronów termicznych, do której dopasowano krzywą teoretyczną, o kształcie: 
+\begin{equation}
+	\phi(z) =
+	\begin{cases}
+		0, & \text{dla } z < -\dfrac{H}{2}, \\[6pt]
+		\cos\!\left(\dfrac{\pi}{H}\, z\right), & \text{dla } -\dfrac{H}{2} \le z \le \dfrac{H}{2}, \\[6pt]
+		0, & \text{dla } \dfrac{H}{2} < z,
+	\end{cases}
+\label{krzywa}
+\end{equation}
+
+gdzie:
+\begin{itemize}
+	\item $z$ jest zagłębieniem pręta,
+	\item $\phi(z)$ jest unormowanym do $1$ osiowym (pionowym) strumieniem neutronów
+	termicznych w reaktorze MARIA,
+	\item $H$ jest efektywną, ekstrapolowaną wysokością rdzenia.
+\end{itemize}
+
+Ponieważ strumień neutronów termicznych był mierzony niezależnie w czterech
+miejscach rdzenia, to z dopasowania wzorów (\ref{krzywa}) do każdego z tych pomiarów otrzymano wartości $H_i \pm \Delta H_i$, a następnie obliczono średnią ważoną:
+\begin{equation}
+	\hat{H} =
+	\frac{\displaystyle \sum_i \dfrac{H_i}{(\Delta H_i)^2}}
+	{\displaystyle \sum_i \dfrac{1}{(\Delta H_i)^2}}.
+\end{equation}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 16cm]{figures/strumień.png}
+	\caption{Względny osiowy rozkład strumienia neutronów termicznych w rdzeniu reaktora MARIA, wraz z dopasowaną krzywą \cite{ILR}}.
+	\label{strumień}
+\end{figure}
+
+\begin{equation}
+	\rho_{\mathrm{PK}}(z)
+	=
+	\int_{0}^{z} \phi(\zeta)\,\mathrm{d}\zeta
+	=
+	\int_{0}^{\hat{H}} \phi(\zeta)\,\mathrm{d}\zeta
+	-
+	\int_{z-L}^{\hat{H}} \phi(\zeta)\,\mathrm{d}\zeta .
+\end{equation}
+
+Aby uporządkować informacje o zależności $\varrho_{\mathrm{PK}}(z)$,
+przedstawiono ją w Tabeli \ref{tabela} dla poszczególnych odcinków parametru $z$.
+Zależność strumienia neutronów oraz efektywności zagłębianego pręta PK
+od głębokości zagłębienia pokazana została na rys. \ref{efektywność}.
+Na tym rysunku przedstawiono jak zmienia się efektywność pręta wraz z zanurzaniem go do dna rdzenia reaktora MARIA.
+
+W chwili, gdy pręt jest całkowicie zanurzony w rdzeniu,
+efektywność pręta PK osiąga swoje maksimum.
+\begin{table}[H]
+	\centering
+	\caption{Zależność osiowego strumienia neutronów oraz efektywności pręta kompensacyjnego od zagłębienia $z$\cite{ILR}}.
+	\label{tabela}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Zagłębienie $z$} &
+		\textbf{Strumień neutronów $\phi(z)$} &
+		\textbf{Efektywność pręta $\varrho_{\mathrm{PK}}(z)$} \\
+		\hline
+		$\left(-\infty,\,-\dfrac{H}{2}\right)$ &
+		$0$ &
+		$0$ \\
+		\hline
+		$\left(-\dfrac{H}{2},\,-\dfrac{H}{2}+L\right)$ &
+		$\cos\!\left(\dfrac{\pi}{H}\,z\right)$ &
+		$\dfrac{H}{\pi}\!\left[
+		\sin\!\left(\dfrac{\pi}{H}\,z\right)+1
+		\right]$ \\
+		\hline
+		$\left(-\dfrac{H}{2}+L,\,\dfrac{H}{2}\right)$ &
+		$\cos\!\left(\dfrac{\pi}{H}\,z\right)$ &
+		$\dfrac{H}{\pi}\!\left[
+		\sin\!\left(\dfrac{\pi}{H}\,z\right)
+		-
+		\sin\!\left(\dfrac{\pi}{H}\,(z-L)\right)
+		\right]$ \\
+		\hline
+		$\left(\dfrac{H}{2},\,\dfrac{H}{2}+L\right)$ &
+		$0$ &
+		$\dfrac{H}{\pi}\!\left[
+		1-
+		\sin\!\left(\dfrac{\pi}{H}\,(z-L)\right)
+		\right]$ \\
+		\hline
+		$\left(\dfrac{H}{2}+L,\,+\infty\right)$ &
+		$0$ &
+		$0$ \\
+		\hline
+	\end{tabular}
+\end{table}
+Podstawiając do wzoru na efektywność pręta z tab. \ref{tabela}, otrzymaną z dopasowania wartość H rys. \ref{strumień} obliczono zależność strumienia neutronów (pomarańczowa krzywa) oraz efektywność pręta kontrolnego (niebieska krzywa) w funkcji zagłębienia pręta.
+Wyniki przedstawiono na rys.~\ref{efektywność}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 16cm]{figures/efektywnosc.png}
+	\caption{Zależność strumienia neutronów oraz efektywności zagłębionego pręta PK od głębokości zagłębienia.}
+	\label{efektywność}
+\end{figure}
+Otrzymana powyżej charakterystyka teoretyczna reaktywności pręta pochłaniającego (niebieska krzywa o kształcie litery "S" z Rys. \ref{efektywność} posłuży w dalszej części pracy do porównania z danymi eksperymentalnymi, zebranymi podczas pomiaru przeprowadzanego w ramach pracy inżynierskiej w rozdziale [\ref{dopasowanie}].

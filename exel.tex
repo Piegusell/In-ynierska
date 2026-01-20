@@ -1,0 +1,42 @@
+
+
+\subsubsection{Cel}
+Celem procedury jest wyznaczenie kolejnych przemieszczeń pręta regulacyjnego (w mm) o zbliżonej wartości przyrostom reaktywności wyrażonej w dolarach.
+
+
+
+
+\subsubsection{Zrzuty ekranu arkusza Excel}
+Na rys.~\ref{fig:excel_frontend} pokazano arkusz operatorski (warstwa \emph{front-end}), w którym użytkownik
+wprowadza wyniki pomiaru wagi pręta (w~\(\$\)) oraz liczbę kroków \(N\). Arkusz automatycznie wyznacza:
+\(\,W_{\mathrm{tot}}\) (średnia z trzech pomiarów wagi pręta metodą zrzutu), skok reaktywności dla każdego z planowanych kroków pomiarowych \(\Delta\rho_\$=W_{\mathrm{tot}}/N\), szacowany okres reaktora \(T\)
+oraz tabelę kolejnych zagłębień pręta dla projektowanych kroków pomiarowych: skumulowane zagłębienie \(x_k\) i~przyrost w kroku \(\Delta h_k\).
+Dodatkowo przedstawiona jest krzywa charakterystyki pręta wraz z naniesionymi punktami, odpowiadającymi krokom, gdzie podczas metody zrzutu[\ref{metoda_zrzutu}] ustalono, że waga PK6 wynosi 1.72\$ co warto mieć w pamięci w podrozdziale \ref{tabele pomiarowe}.
+Natomiast na  rys.~\ref{fig:excel_backend} przedstawiono arkusz obliczeniowy (warstwa \emph{back-end}). Zawiera on implementację równania \emph{odwrotnych godzin}(\ref{inhour}):
+
+Na podstawie wyników dopasowano aproksymacje używane  w arkuszu operatorskim to jest:
+\begin{align}
+	\rho_\$(T) &\approx a_\rho\,T^{b_\rho},\\
+	T(\Delta\rho_\$) &\approx a_T\,(\Delta\rho_\$)^{b_T},
+\end{align}
+co pozwala szybko oszacować oczekiwany okres \(T\) dla zadanego kroku \(\Delta\rho_\$\) 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/Exel1.png}
+	\caption{Arkusz operatorski (\emph{front-end}): wprowadzanie wyników pomiaru wagi pręta, wyznaczenie \(W_{\mathrm{tot}}\),
+		\(\Delta\rho_\$\), szacowanego okresu \(T\) oraz tabeli kroków \((x_k,\Delta h_k)\); wykres charakterystyki pręta z zaznaczonymi krokami.}
+	\label{fig:excel_frontend}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/Exel2.png}
+	\caption{Arkusz obliczeniowy (\emph{back-end}): implementacja równania inhour \eqref{eq:inhour_dollar_excel} (model 6-grupowy),
+		tabela \(\beta_i\), \(\lambda_i\) oraz wartości \(\rho_\$(T)\) dla wybranych okresów; dopasowania potęgowe wykorzystywane w części operatorskiej.}
+	\label{fig:excel_backend}
+\end{figure}
+\label{subsubsec:excel_screeny}
+
+
+

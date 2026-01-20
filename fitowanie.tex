@@ -1,0 +1,286 @@
+Podczas przeprowadzania pomiarów metodą zrzutu dla pierwszego kroku pomiarowego można zaobserwować aberrację
+w postaci dłuższego niż pozostałych okresów reaktora oraz małej wartości reaktywności
+$\rho_\$$ dla pierwszego pomiaru.
+Zjawisko to wynika z faktu, że w chwili wykonywania pierwszego wyciągania pręt
+regulacyjny PK6 wychodził z rdzenia na jego dole o dodatkowe kilka (nie wiemy ile) milimetrów, oraz linka która jest przyczepiona do PK mogła być rozwijana dalej po osiągnięciu przez pręt dna reaktora.  W konsekwencji wysuwanie pręta prowadziło do
+zwiększonego pochłaniania neutronów, co znalazło odzwierciedlenie zarówno
+w wydłużeniu okresu reaktora, jak i w obniżonej wartości reaktywności.
+Efekt ten jest wyraźnie widoczny na wykresie przedstawionym na
+rys.~\ref{zrzut001}.
+
+W rezultacie pierwszy pomiar charakteryzuje się wartościami odbiegającymi
+od pozostałych wyników przez co zaniża o nieznaną wartość wszystkie pozostałe punkty.
+Pozostałe dziesięć pomiarów wykonano dla położeń pręta bez tego efektu, odpowiadających kolejnym schodkom zanurzenia. Uzyskane dla nich wartości okresu reaktora
+oraz reaktywności są do siebie zbliżone i mogą zostać uznane za miarodajne.
+\begin{table}[H]
+	\centering
+	\caption{Wartości okresu reaktora oraz reaktywności wyznaczone na podstawie
+		pomiarów detektora IRL-2.1 metodą okresu reaktora.}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Zrzut} &
+		$\boldsymbol{T_{\text{IRL-2.1}}}$ [s] &
+		$\boldsymbol{\rho_{\text{IRL-2.1}}}$ [\$] \\
+	\hline
+	zrzut01 & $211,67(5)$  & $0,05200(10)$ \\
+	zrzut02 & $76,47(11)$  & $0,11864(13)$ \\
+	zrzut03 & $61,73(8)$   & $0,13861(13)$ \\
+	zrzut04 & $76,96(14)$  & $0,11808(15)$ \\
+	zrzut05 & $63,53(13)$  & $0,1358(2)$   \\
+	zrzut06 & $63,45(11)$  & $0,13593(17)$ \\
+	zrzut07 & $71,40(12)$  & $0,12480(15)$ \\
+	zrzut08 & $76,70(11)$  & $0,11839(13)$ \\
+	zrzut09 & $71,69(11)$  & $0,12444(13)$ \\
+	zrzut10 & $67,62(14)$  & $0,12985(19)$ \\
+	zrzut11 & $67,90(10)$  & $0,12946(13)$ \\
+	\hline
+	
+	\end{tabular}
+	\label{tab:IRL21}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Wartości okresu reaktora oraz reaktywności wyznaczone na podstawie
+		pomiarów detektora IRL-2.2 metodą okresu reaktora.}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Zrzut} &
+		$\boldsymbol{T_{\text{IRL-2.2}}}$ [s] &
+		$\boldsymbol{\rho_{\text{IRL-2.2}}}$ [\$] \\
+\hline
+zrzut01 & $212,18(8)$  & $0,05189(17)$ \\
+zrzut02 & $76,60(12)$  & $0,11850(14)$ \\
+zrzut03 & $61,95(11)$  & $0,13826(17)$ \\
+zrzut04 & $76,47(14)$  & $0,11865(16)$ \\
+zrzut05 & $63,60(15)$  & $0,1357(2)$   \\
+zrzut06 & $63,30(13)$  & $0,13615(20)$ \\
+zrzut07 & $71,93(15)$  & $0,12412(19)$ \\
+zrzut08 & $76,52(12)$  & $0,11859(14)$ \\
+zrzut09 & $71,66(13)$  & $0,12447(16)$ \\
+zrzut10 & $67,60(16)$  & $0,12988(22)$ \\
+zrzut11 & $67,91(16)$  & $0,12944(22)$ \\
+\hline
+
+	\end{tabular}
+	\label{tab:IRL22}
+\end{table}
+Na podstawie średnich wartości reaktywności $\bar{\rho}$ zestawionych w tabeli
+\ref{zrzuty} wyznaczono skumulowaną charakterystykę pręta regulacyjnego PK6
+w postaci funkcji $\rho_{\Sigma}(s)$, zdefiniowanej jako suma kolejnych
+przyrostów reaktywności:
+\begin{equation}
+	\rho_{\Sigma,k} = \sum_{j=1}^{k} \bar{\rho}_j .
+\end{equation}
+Niepewność wielkości $\rho_{\Sigma}$ wyznaczono metodą propagacji niepewności
+\cite{propagacja}, rozdział~5.1, wzór~(10), przyjmując niezależność niepewności
+poszczególnych kroków pomiarowych.
+
+
+\begin{table}[h]
+	\centering
+	\caption{Średnie arytmetyczne okresu reaktora oraz reaktywności wyznaczone
+		na podstawie pomiarów detektorów IRL-2.1 i IRL-2.2 z położeniem PK6.
+		Reaktywność skumulowaną $\rho_{\Sigma}$ oraz jej niepewność wyznaczono
+		na podstawie sumowania kolejnych przyrostów reaktywności
+		z uwzględnieniem propagacji niepewności.}
+	\label{zrzuty}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{Zrzut} &
+		$\boldsymbol{\bar{T}}$ s &		$\boldsymbol{\bar{\rho}}$ \$ $  &
+		$\boldsymbol{\rho_{\Sigma}} \$ $  &
+		$\boldsymbol{z}$ mm \\
+		\hline
+		zrzut01 & $211{,}92(5)$  & $0{,}05194(1)$ & $0{,}05194(1)$ & $219{,}00(1)$ \\
+		zrzut02 & $76{,}54(8)$   & $0{,}11857(9)$ & $0{,}17051(9)$ & $307{,}30(2)$ \\
+		zrzut03 & $61{,}84(7)$   & $0{,}13843(11)$& $0{,}30894(14)$& $388{,}90(2)$ \\
+		zrzut04 & $76{,}72(9)$   & $0{,}11836(11)$& $0{,}42730(18)$& $450{,}00(1)$ \\
+		zrzut05 & $63{,}56(10)$  & $0{,}13575(15)$& $0{,}56305(23)$& $517{,}60(2)$ \\
+		zrzut06 & $63{,}37(8)$   & $0{,}13604(13)$& $0{,}69909(27)$& $584{,}00(1)$ \\
+		zrzut07 & $71{,}67(9)$   & $0{,}12446(12)$& $0{,}82355(29)$& $646{,}00(1)$ \\
+		zrzut08 & $76{,}61(8)$   & $0{,}11849(9)$ & $0{,}94204(31)$& $712{,}00(1)$ \\
+		zrzut09 & $71{,}67(8)$   & $0{,}12445(10)$& $1{,}06649(32)$& $790{,}00(1)$ \\
+		zrzut10 & $67{,}61(10)$  & $0{,}12986(14)$& $1{,}19635(35)$& $883{,}00(1)$ \\
+		zrzut11 & $67{,}91(9)$   & $0{,}12945(13)$& $1{,}32580(38)$& $1099{,}30(2)$ \\
+		\hline
+		
+	\end{tabular}
+	\label{tab:srednia_aryl_IRL}
+\end{table}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=0, width= 14cm]{figures/zrzut001.png}
+	\caption{Wykres zrzutu 01, który rozpoczynał  pomiar metodą okresu. Na górnym wykresie wyraźnie widać, że w początkowej fazie wysuwania pręta z rdzenia (obszar, zaznaczony na osi czasu za pomocą dwóch pionowych, przerywanych linii), moc reaktora chwilowo spada, zamiast rosnąć. Oznacza to, że pręt musiał być zanurzony małym fragmentem aż pod rdzeń i w trakcie wyciągania go do góry przez chwilę nie zmniejszało się jego efektywne zanurzenie w rdzeniu, a wręcz zwiększało. }
+	\label{zrzut001}
+\end{figure}
+
+
+Ze względu na dużą liczbę wykresów dopasowania w części głównej zamieszczono jedynie reprezentatywne przykłady. Pełny zestaw wykresów dla wszystkich przypadków przedstawiono w repozytorium, który został umieszczony na GitHubie pod adresem: \url{https://github.com/Piegusell/In-ynierska}.
+
+\subsection{Dopasowanie wartości eksperymentalnych z krzywą teoretyczną}\label{dopasowanie}
+
+Krzywą teoretyczną efektywności pręta przyjęto na podstawie zależności
+zestawionej w tabeli \ref{tabela}, przedstawionej graficznie na rysunku
+\ref{efektywność}. Położenie pręta PK6 było identyczne dla obu detektorów.
+Jako parametr stały przyjęto długość czynnego odcinka pręta regulacyjnego:
+\[
+L = 1~\text{m}.
+\]
+
+Dopasowanie charakterystyki teoretycznej do danych eksperymentalnych wykonano
+z wykorzystaniem programu napisanego w języku \textit{Python}, stosując procedurę
+\texttt{curve\_fit}, opartą na metodzie nieliniowych najmniejszych kwadratów.
+Jako parametry dopasowywane przyjęto:
+\begin{itemize}
+	\item $H$ — efektywną wysokość rdzenia reaktora,
+	\item $a$ — współczynnik skali dopasowujący amplitudę modelu do danych
+	eksperymentalnych.
+	\item \text{$z_{0}$} — początkowe położenia pręta kontrolnego.
+\end{itemize}
+
+
+Pozostałe wielkości występujące w modelu traktowano jako znane i stałe.
+
+Jakość dopasowania oceniono na podstawie analizy reszt
+\begin{equation}
+	r_i = \rho_i - \hat{\rho}_i,
+\end{equation}
+gdzie $\rho_i$ oznacza wartości eksperymentalne, natomiast $\hat{\rho}_i$
+wartości wyznaczone z modelu teoretycznego dla tych samych położeń pręta.
+Zdefiniowano sumę kwadratów reszt (SSE) oraz całkowitą sumę kwadratów (SST):
+\begin{equation}
+	\mathrm{SSE} = \sum_{i=1}^{N} r_i^2,
+	\qquad
+	\mathrm{SST} = \sum_{i=1}^{N} \left(\rho_i - \bar{\rho}\right)^2,
+\end{equation}
+gdzie $\bar{\rho}$ jest średnią arytmetyczną wartości eksperymentalnych.
+Na tej podstawie obliczono współczynnik determinacji:
+\begin{equation}
+	R^2 = 1 - \frac{\mathrm{SSE}}{\mathrm{SST}}.
+\end{equation}
+Wynik  w postaci porównania charakterystyki eksperymentalnej z krzywą teoretyczną przedstawiono na rys. \ref{fitowanie_obnizone}. Uzyskane rezultaty wskazują, że efektywna wysokość rdzenia reaktora jądrowego MARIA jest prawdopodobnie mniejsza od wartości przyjętej w raporcie~\cite{ILR}. Ponadto, mając na uwadze, że pierwszy etap analizy mógł prowadzić do zaniżenia wartości skumulowanej reaktywności, należy dopuścić możliwość, że rzeczywista wartość parametru $H$ jest jeszcze mniejsza. Dlatego wykonano dopasowanie, w którym dodatkowym parametrem modelu było przesunięcie osi położenia $z_0$.  Zmienna modelowa przyjmuje postać $z_{\mathrm{rel}} = z - z_0$, gdzie $z_0$ jest parametrem dopasowywanym. Dopasowanie powoduje uzyskanie mniejszej, niż z rys. \ref{strumień}, wartości H, bo eksperyment z rys. \ref{strumień} był w wyidealizowanych warunkach, bez zanurzonych prętów w okolicy pomiaru, gdzie podczas pomiaru wykonujemy z zanurzonymi prętami (sam mierzony pręt jest zanurzony i zaburza lokalnie strumień neutronów, zaniżając wartość H).~\cite{ILR}.
+
+
+\begin{table}[H]	
+	
+	\centering
+	\caption{Funkcja efektywności pręta sterującego użyta w modelu dopasowania}
+	\label{funkcja efe}
+	\renewcommand{\arraystretch}{1.4}
+	\[
+	\varepsilon(z_\mathrm{rel}) =
+	\begin{cases}
+		0,
+		& z_\mathrm{rel} \le -\dfrac{H}{2} \\[6pt]
+		
+		\dfrac{H}{\pi}
+		\left[
+		\sin\!\left(\dfrac{\pi z_\mathrm{rel}}{H}\right) + 1
+		\right],
+		& -\dfrac{H}{2} < z_\mathrm{rel} < -\dfrac{H}{2} + L \\[10pt]
+		
+		\dfrac{H}{\pi}
+		\left[
+		\sin\!\left(\dfrac{\pi z_\mathrm{rel}}{H}\right)
+		-
+		\sin\!\left(\dfrac{\pi (z_\mathrm{rel}-L)}{H}\right)
+		\right],
+		& -\dfrac{H}{2} + L \le z_\mathrm{rel} < \dfrac{H}{2} \\[10pt]
+		
+		\dfrac{H}{\pi}
+		\left[
+		1 -
+		\sin\!\left(\dfrac{\pi (z_\mathrm{rel}-L)}{H}\right)
+		\right],
+		& \dfrac{H}{2} \le z_\mathrm{rel} < \dfrac{H}{2} + L \\[10pt]
+		
+		0,
+		& z_\mathrm{rel} \ge \dfrac{H}{2} + L
+	\end{cases}
+	\]
+
+\end{table}
+\begin{table}[H]
+	\centering
+	\caption{Model matematyczny użyty do dopasowania danych pomiarowych}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|p{6cm}|c|p{6.5cm}|}
+		\hline
+		Wielkość & Symbol & Zależność \\ \hline
+		
+		Położenie względne pręta
+		& $z_\mathrm{rel}$
+		& $z_\mathrm{rel} = z - z_0$ \\ \hline
+		
+		Funkcja efektywności pręta
+		& $\varepsilon(z_\mathrm{rel})$
+		& tabela \ref{funkcja efe}  \\ \hline
+		
+		Model 
+		& $\rho(z)$
+		& $\rho(z) = a \, \varepsilon(z - z_0)$ \\ \hline
+		
+	\end{tabular}
+\end{table}
+
+
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=14cm]{figures/fitowanie_wynikowe_ob.png}
+	\caption{Dopasowanie modelu efektywności pręta kontrolnego z uwzględnieniem przesunięcia początku wsuwania ($z_0$).}
+	\label{fitowanie_obnizone}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Wyniki dopasowania modelu efektywności pręta kontrolnego z uwzględnieniem przesunięcia początku wsuwania dla rys.\ref{fitowanie_obnizone}}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		Wielkość & Symbol & Wartość & Jednostka \\
+		\hline
+		Współczynnik skali (dopasowany) 
+		& $a$ 
+		& $0.00205952 \pm 0.00002986$ 
+		& -- \\
+		\hline
+		Efektywna wysokość rdzenia (dopasowana) 
+		& $H$ 
+		& $1007.49 \pm 19.22$ 
+		& mm \\
+		\hline
+		Przesunięcie początku wsuwania 
+		& $z_0$ 
+		& $569.73 \pm 4.06$ 
+		& mm \\
+		\hline
+		Suma kwadratów reszt 
+		& $SSE$ 
+		& $1.20 \times 10^{-3}$ 
+		& \$\textsuperscript{2} \\
+		\hline
+		Całkowita suma kwadratów 
+		& $SST$ 
+		& $1.7911$ 
+		& \$\textsuperscript{2} \\
+		\hline
+		Współczynnik determinacji 
+		& $R^2$ 
+		& $0.99933$ 
+		& -- \\
+		\hline
+	\end{tabular}
+	\label{tab:fit_results_z0}
+\end{table}

@@ -1,0 +1,74 @@
+Podstawiając asymptotyczne rozwiązania funkcji $n(t)$ oraz $C_i(t)$ ze wzorów (\ref{rtyurtuturtyrtrtu}) i (\ref{qerqwetqreyqery}) do równań kinetyki punktowej (\ref{nodt}) oraz (\ref{ciodt}) otrzyma się, że:
+
+\begin{equation}
+	\frac{\mathrm{d}}{\mathrm{d}t}(N_me^{\frac{t}{T}})=\frac{\rho_0-\beta}{\Lambda}N_me^{\frac{t}{T}}+\sum_{i=1}^{j} \lambda_iC_{m,i}e^{\frac{t}{T}} 
+	\label{nodtabababab}
+\end{equation}
+
+\begin{equation}
+	\frac{\mathrm{d}}{\mathrm{d}t}(C_{m,i}e^{\frac{t}{T}})=\frac{\beta_i}{\Lambda}N_me^{\frac{t}{T}}-\lambda_iC_{m,i}e^{\frac{t}{T}}
+	\label{ciodtababababab}
+\end{equation}
+
+\noindent Różniczkując lewą stronę tych równań, otrzyma się:
+
+\begin{equation}
+	\frac{N_m}{T}\bcancel{e^{\frac{t}{T}}}=\frac{\rho_0-\beta}{\Lambda}N_m\bcancel{e^{\frac{t}{T}}}+\sum_{i=1}^{j} \lambda_iC_{m,i}\bcancel{e^{\frac{t}{T}}}
+	\label{nodbab}
+\end{equation}
+
+\begin{equation}
+	\frac{C_{m,i}}{T}\bcancel{e^{\frac{t}{T}}}=\frac{\beta_i}{\Lambda}N_m\bcancel{e^{\frac{t}{T}}}-\lambda_iC_{m,i}\bcancel{e^{\frac{t}{T}}}
+	\label{ciodtbabab}
+\end{equation}
+
+\noindent czyli:
+
+\begin{equation}
+	\frac{N_m}{T}=\frac{\rho_0-\beta}{\Lambda}N_m+\sum_{i=1}^{j} \lambda_iC_{m,i}
+	\label{nodbaqqqqqqb}
+\end{equation}
+
+\begin{equation}
+	\frac{C_{m,i}}{T}=\frac{\beta_i}{\Lambda}N_m-\lambda_iC_{m,i}
+	\label{ciodtbabqqqqqqab}
+\end{equation}
+
+\noindent Wyznaczając $C_{m,i}$ ze wzoru (\ref{ciodtbabqqqqqqab}) i podstawiając do wzoru (\ref{nodbaqqqqqqb}) otrzymamy, że
+
+\begin{equation}
+	\frac{\bcancel{N_m}}{T}=\frac{\rho_0-\beta}{\Lambda}\bcancel{N_m}+\frac{\bcancel{N_m}}{\Lambda}\sum_{i=1}^{j} \frac{\beta_i}{\frac{1}{T}+\lambda_i}
+	\label{nodbwewewrwtwyaqqqqqqb}
+\end{equation}
+
+\noindent Przekształcając powyższe równanie można otrzymać wzór na wprowadzoną reaktywność $\rho_0$:
+
+\begin{equation}
+	\rho_0=\frac{\Lambda}{T}+\beta - \sum_{i=1}^{j} \frac{\lambda_i\beta_i}{\frac{1}{T}+\lambda_i}
+	\label{rrrrrrrrrrryyyy}
+\end{equation}
+
+\noindent i pamiętając, że $\beta=\sum_{i=1}^{j}\beta_i$ można wciągnąć $\beta$ pod sumę we wzorze (\ref{rrrrrrrrrrryyyy}) i po uporządkowaniu ostatecznie otrzymać \textbf{wzór odwrotnych godzin}:
+
+\begin{equation}\label{inhour}
+	\rho_0=\frac{1}{T}\left(\Lambda+ \sum_{i=1}^{j} \frac{\beta_i}{\frac{1}{T}+\lambda_i}\right)
+	\label{wzodgo}
+\end{equation}
+
+\noindent Jeżeli wprowadzaną reaktywność chcemy wyrazić w jednostkach $\$$, to, należy pamiętać, że $\rho_{\$}=\frac{\rho}{\beta}$, więc wtedy wzór odwrotnych godzin przyjmie postać:
+
+\begin{equation}
+	\rho_{\$}=\frac{1}{T\beta}\left(\Lambda+ \sum_{i=1}^{j} \frac{\beta_i}{\frac{1}{T}+\lambda_i}\right)
+	\label{wzodgoSS}
+\end{equation}
+
+\noindent Wykres zależności (\ref{wzodgoSS}) przedstawiono na Rysunku \ref{umpaumpa}.
+
+\begin{figure}[H]
+	\centering
+	\scalebox{1}[1]{\includegraphics[width= 14cm]{figures/Okres reaaktora.png}}
+	\caption{Zależność reaktywności wprowadzanej do rdzenia $\rho_{\$}$ od okresu reaktora $T$. Przypadek jednogrupowy i sześciogrupowy.	}\label{umpaumpa}
+\end{figure}
+Widać, że przypadek jednogrupowy jest bardziej konserwatywny i daje wyraźnie krótsze czasy okresu reaktora, niż przypadek wielogrupowy.
+
+

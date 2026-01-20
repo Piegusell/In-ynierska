@@ -1,0 +1,78 @@
+Porównując rozwiązania równań kinetyki punktowej dla przypadku jednogrupowego 
+i sześciogrupowego, można zauważyć, że przybierają one kształt:
+
+\begin{equation}
+n(t)=\sum\limits_{k=1}^{j+1}N_ke^{s_kt}
+\label{n_suma_exp}
+\end{equation}
+
+\begin{equation}
+C_i(t)=\sum\limits_{k=1}^{j+1}C_{k,i}e^{s_kt}
+\label{C_suma_exp}
+\end{equation}
+
+\noindent gdzie $N_k$ oraz $C_{k,i}$ są stałymi, a $s_k$ mają wymiar $\frac{1}{\mathrm{czas}}$ i są wartościami własnymi macierzy $\mathbb{A}$ [\ref{macierouuu}].
+
+Ze względu na kształt zależności \ref{n_suma_exp}, \ref{C_suma_exp} można przewidzieć, jak $n(t)$ oraz $C_i(t)$ będą się zachowywały przy $t\rightarrow\infty$. Mianowicie człon z eksponentem o największym wykładniku (największym wykładniku, $s_m=max(s_k)$, ze wszystkich występujących $s_k$), najszybciej rosnąc, zdominuje wszystkie pozostałe. Można to pokazać, zauważając, że~iloraz dwóch eksponentów:
+
+\begin{equation}
+\frac{A_xe^{s_xt}}{A_ye^{s_yt}}=\frac{A_x}{A_y}e^{(s_x-s_y)t}\xrightarrow[t\rightarrow\infty]{}
+\begin{cases}
+    \infty,& s_x>s_y\\
+    \sfrac{A_x}{A_y},& s_x=s_y \\
+    0,              & s_x<s_y
+\end{cases}
+\label{AdoA}
+\end{equation}
+
+\noindent gdzie $A_x$ oraz $A_y$ są stałymi.
+
+Wtedy, korzystając z własności (\ref{AdoA}) oraz definiując $s_m=max(s_k)$, widać, że:
+
+\begin{equation}
+\sum\limits_{k=1}^{j+1}\frac{A_ke^{s_kt}}{A_me^{s_mt}}\xrightarrow[t\rightarrow\infty]{ }1
+\label{tralala}
+\end{equation}
+
+\noindent Czyli:
+
+\begin{equation}
+\sum\limits_{k=1}^{j+1}A_ke^{s_kt}\xrightarrow[t\rightarrow\infty]{ } A_me^{s_mt}.
+\label{tralala2}
+\end{equation}
+
+\noindent To powoduje, że ostatecznie, po odpowiednio długim czasie wartość $n(t)$ zbiegnie asymptotycznie do postaci:
+
+\begin{equation}
+n(t)\xrightarrow[t\rightarrow\infty]{}N_me^{s_mt}=N_me^{\frac{t}{T}},
+\label{rtyurtuturtyrtrtu}
+\end{equation}
+
+\noindent oraz wartość $C_i(t)$ zbiegnie asymptotycznie do postaci:
+
+\begin{equation}
+C_i(t)\xrightarrow[t\rightarrow\infty]{}C_{m,i}e^{s_mt}=C_{m,i}e^{\frac{t}{T}},
+\label{qerqwetqreyqery}
+\end{equation}
+
+\noindent gdzie $\frac{1}{T}=s_m$. $T$ jest z definicji okresem reaktora, który się obserwuje (wszystkie pozostałe człony $e^{s_it}$ zostały zdominowane przez człon $e^{s_mt}=e^{\frac{t}{T}}$). Przykładowe zachowanie się mocy reaktora po wprowadzeniu do rdzenia stałej porcji reaktywności i zaobserwowanie okresu reaktora przedstawione zostało na Rysunku \ref{T}. Są to wyniki obliczeń (numerycznych rozwiązań równań kinetyki punktowej.) dla przypadku sześciogrupowego (Rozdział \ref{wielogrupowe}). Na rysunku tym widać, że po upływie około 13,13 sekund po wprowadzeniu dodatniej reaktywności, wzrost mocy staje się funkcją wykładniczą (linia prosta na wykresie, gdy oś pionowej współrzędnej jest w~skali logarytmicznej).
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[angle=0, width= 14cm]{figures/przebieg_mocy_rho_0_5v2.png}
+	\caption{Przebieg mocy reaktora w czasie. Wartość wprowadzonej reaktywności (wynosiła +0,5 $\$$) \cite{Tadi}.}\label{T}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=0, width= 14cm]{figures/przebieg_mocy_rho_1.png}
+	\caption{Przebieg mocy reaktora w czasie. Wartość wprowadzonej reaktywności (wynosiła +1 $\$$) \cite{Tadi}.}\label{T2}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=0, width= 14cm]{figures/przebieg_mocy_rho_1_5.png}
+	\caption{Przebieg mocy reaktora w czasie. Wartości wprowadzonej reaktywności (+1,5 $\$$)   \cite{Tadi}.}\label{T3}
+\end{figure}
+
+
+Kształt rozwiązań (\ref{rtyurtuturtyrtrtu}) oraz (\ref{qerqwetqreyqery}) można podstawić do układu równań kinetyki reaktora punktowego (\ref{maciero}).
